@@ -467,7 +467,7 @@ class IndexController extends Controller {
 	public function getCart()
 	{
 		$product_cart= Cart::content();
-		dd($product_cart);
+		// dd($product_cart);
 		$bank = DB::table('bank_account')->get();
 		$total = $this->getTotalPrice();
 		$province = DB::table('province')->get();
@@ -487,7 +487,6 @@ class IndexController extends Controller {
 	{
 		// $data = $req->only('product_id');
 		$product = DB::table('products')->select()->where('status',1)->where('id',$req->id)->first();
-		dd($product);
 		if (!$product) {
 			die('product not found');
 		}
