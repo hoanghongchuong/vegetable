@@ -36,6 +36,7 @@
 <!-- Main content -->
 <section class="content">
   <div class="row">
+    
     <div class="col-xs-12">
       <div class="box">
         @include('admin.messages_error')
@@ -103,9 +104,9 @@
                   </div> -->
                   <div class="form-group"> 
                     @if($item->noibat>0)
-                      <a href="admin/product/edit?id={{$item->id}}&noibat={{ time() }}" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Nổi bật</a>
+                      <a href="admin/product/edit?id={{$item->id}}&noibat={{ time() }}" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Khuyến mại</a>
                     @else
-                      <a href="admin/product/edit?id={{$item->id}}&noibat={{ time() }}" class="btn btn-danger btn-xs"><i class="fa fa-eye"></i> Nổi bật</a>
+                      <a href="admin/product/edit?id={{$item->id}}&noibat={{ time() }}" class="btn btn-danger btn-xs"><i class="fa fa-eye"></i> Khuyến mại</a>
                     @endif
                   </div>
                 </td>

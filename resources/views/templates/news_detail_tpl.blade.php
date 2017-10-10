@@ -22,7 +22,9 @@
                     <p class="time">{{date('d/m/Y', strtotime($news_detail->created_at))}}</p>
                     
                     <p>
-                        <img src="images/cmt.png">
+                       <div class="comment">
+                            <div class="fb-comments" data-href="{{url('san-pham/'.$news_detail->alias.'.html')}}" data-numposts="2"></div>
+                        </div>
                     </p>
                 </div>
             </div>

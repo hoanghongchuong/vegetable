@@ -47,9 +47,9 @@
   
         @include('templates.layout.header')
         <main class="cd-main-content">
-            
+             @yield('content')
         </main>
-        @yield('content')
+       
         @include('templates.layout.footer')
    
     

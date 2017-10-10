@@ -67,7 +67,7 @@ class ProductController extends Controller
         }
         $product->mota = $request->txtDesc;
         $product->photo = $img_name;
-
+        $product->xuatxu = $request->xuatxu;
         $product->thuonghieu_id = $request->txtThuonghieu;
         $product->baohanh = $request->txtBaohanh;
         $product->vanchuyen = $request->txtVanchuyen;
@@ -239,6 +239,7 @@ class ProductController extends Controller
 
             $product->thuonghieu_id = $request->txtThuonghieu;
             $product->baohanh = $request->txtBaohanh;
+            $product->xuatxu = $request->xuatxu;
             $product->vanchuyen = $request->txtVanchuyen;
             $product->huongdan = $request->txtHuongdan;
             $product->namsanxuat = $request->txtNamsanxuat;

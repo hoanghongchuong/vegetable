@@ -35,7 +35,7 @@
           </ul>
         </li>
         <!-- <li><a href="admin/thuonghieu"><i class="fa fa-circle-o"></i> <span>Quản lý thương hiệu</span></a></li> -->
-        <!-- <li><a href="admin/orders"><i class="fa fa-circle-o"></i> <span>Quản lý đơn hàng</span></a></li> -->
+        <li><a href="admin/orders"><i class="fa fa-circle-o"></i> <span>Quản lý đơn hàng</span></a></li>
         <!-- <li class="treeview">
           <a href="#">
             <i class="fa fa-circle-o"></i> <span>Chương trình khuyến mại</span> <i class="fa fa-angle-left pull-right"></i>
@@ -143,11 +143,11 @@
         <!-- <li><a href="admin/lienket?type=cam-nhan"><i class="fa fa-circle-o"></i> <span>Cảm nhận khách hàng</span></a></li> -->
         <!-- <li><a href="admin/recruitment"> <i class="fa fa-circle-o"></i> <span>Tuyển dụng</span></a></li> -->
         <li><a href="admin/contact"><i class="fa fa-envelope"></i> <span>Quản lý liên hệ</span></a></li>
-        <!-- <li><a href="admin/newsletter?type=newsletter"><i class="fa fa-circle-o"></i> <span>Đăng ký nhận tin</span></a></li> -->
+        <li><a href="admin/newsletter?type=newsletter"><i class="fa fa-circle-o"></i> <span>Đăng ký nhận tin</span></a></li>
         <!-- <li><a href="admin/lienket?type=gioi-thieu"><i class="fa fa-circle-o"></i> <span>Hình ảnh giới thiệu</span></a></li> -->
        <!--  <li><a href="admin/lienket?type=tieu-chi"><i class="fa fa-circle-o"></i> <span>Tiêu chí hội viên</span></a></li>
         <li><a href="admin/slider?type=thu-vien-anh"><i class="fa fa-circle-o"></i> <span>Thư viện ảnh</span></a></li> -->
-        <!-- <li><a href="admin/slider?type=chinh-sach"><i class="fa fa-circle-o"></i> <span>Quản lý chính sách</span></a></li> -->
+        <li><a href="admin/slider?type=chinh-sach"><i class="fa fa-circle-o"></i> <span>Quản lý chính sách</span></a></li>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-pie-chart"></i>
@@ -186,6 +186,7 @@
         </li> -->
         <!-- <li><a href="admin/bankaccount"><i class="fa fa-envelope"></i><span>Quản lý tài khoản ngân hàng</span></a></li> -->
         <!-- <li><a href="{{ asset('admin/menu?type=menu-top') }}"><i class="fa fa-circle-o"></i> <span>Quản lý menu</span></a></li> -->
+        <li><a href="admin/slogan"><i class="fa fa-gear" aria-hidden="true"></i> <span>Quản lý slogan</span></a></li>
         <!-- <li><a href="admin/position"><i class="fa fa-gear" aria-hidden="true"></i> <span>Vị trí quảng cáo</span></a></li> -->
         <li><a href="admin/banner"><i class="fa fa-gear" aria-hidden="true"></i> <span>Quản lý banner</span></a></li>
          <li><a href="admin/partners"><i class="fa fa-circle-o"></i> <span>Đối tác</span></a></li>

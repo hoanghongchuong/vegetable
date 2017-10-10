@@ -1119,3 +1119,51 @@ menu on mobile
     width:100%;
     height:100%;
 }
+.paginations{
+    text-align: right;
+}
+.pagination{
+    /*text-align: center;*/
+    display: inline-block;
+}
+.pagination li{
+    display: inline-block;
+    margin-right: 0px;
+    border: 1px solid #409e03;
+}
+.pagination li span, .pagination li a{
+    font-size: 15px;
+    font-weight: 600;
+    color: #409e03;
+    border: 0;
+    /*background: #409e03;*/
+    border-color: #409e03;
+    /*border-radius: 50%;*/
+    padding: .5rem .75rem;
+    /*width: 30px;
+    height: 30px;*/
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /*margin-right: 5px;*/
+}
+/*.pagination li a{
+    border-color: #409e03;
+}*/
+.pagination li.active span, .pagination li a:hover{
+    background: #409e03 !important;
+    color: #fff !important;
+    /*font-size: 17px;*/
+}
+.pagination li.disabled span{
+    color: #409e03;
+}
+.pagination li:last-child a{
+    color: #409e03 !important;
+    /*font-size: 22px;*/
+    font-weight: normal;
+}
+.pagination li:last-child a:hover, .pagination li:first-child a:hover{
+    background: none !important;
+    color: #409e03 !important;
+}

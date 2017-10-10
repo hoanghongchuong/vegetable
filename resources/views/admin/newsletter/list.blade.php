@@ -120,7 +120,7 @@
           </div>
         </div>
         <div class="clearfix"></div>
-        <div class="main_guimail">
+        <!-- <div class="main_guimail">
           <div class="col-md-6 col-xs-12">
               <div class="form-group">
                   <label>Tiêu đề</label>
@@ -151,7 +151,7 @@
               </div>
           </div>
           <div class="clearfix"></div>
-        </div>  
+        </div>  --> 
       </div><!-- /.box -->
     </div><!-- /.col -->
   </div><!-- /.row -->

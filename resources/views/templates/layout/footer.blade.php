@@ -10,16 +10,16 @@
                     <a href="index.html" title="">
                         <img src="{{asset('public/images/logo-f.png')}}" alt="" title="" class="logo-b">
                     </a>
-                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> Địa chỉ:  Tầng 8, Tòa nhà TOYOTA Thanh Xuân</p>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> Địa chỉ:  {{$setting->address}}</p>
                     <p class="hotline">
                         <img src="{{asset('public/images/hotline.png')}}" alt="" title="">
                         <span>{{$setting->hotline}}</span>
                     </p>
                     <div class="social">
-                        <a href="" title=""><img src="{{asset('public/images/so1.png')}}" alt="" title=""> </a>
-                        <a href="" title=""><img src="{{asset('public/images/so2.png')}}" alt="" title=""> </a>
-                        <a href="" title=""><img src="{{asset('public/images/so3.png')}}" alt="" title=""> </a>
-                        <a href="" title=""><img src="{{asset('public/images/so4.png')}}" alt="" title=""> </a>
+                        <a href="{{$setting->twitter}}"  target="_blank" title=""><img src="{{asset('public/images/so1.png')}}" alt="" title=""> </a>
+                        <a href="{{$setting->facebook}}"  target="_blank" title=""><img src="{{asset('public/images/so2.png')}}" alt="" title=""> </a>
+                        <a href="{{$setting->google}}"  target="_blank" title=""><img src="{{asset('public/images/so3.png')}}" alt="" title=""> </a>
+                        <a href="{{$setting->youtube}}" target="_blank"  title=""><img src="{{asset('public/images/so4.png')}}" alt="" title=""> </a>
                         <a href="" title=""><img src="{{asset('public/images/so5.png')}}" alt="" title=""> </a>
                     </div>
                 </div>

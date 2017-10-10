@@ -1,51 +1,1074 @@
 @extends('index')
 @section('content')
 
-<section class="bcsection">
-    <div class="container">
-        <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html" title="">Trang chủ</a></li>
-            <li class="breadcrumb-item"><a href="pro.html" title="">Sản phẩm</a></li>
-        </ul>
+<div class="container">
+    <div class="bre">
+        <nav class="breadcrumb">
+            <a class="breadcrumb-item" href="{{url('')}}">Trang chủ</a>
+            <span class="breadcrumb-item active">Sản phẩm</span>
+        </nav>
     </div>
-</section>
-
-<section class="product">
+</div>
+<section class="product-list">
     <div class="container">
-        <h2 class="about-tit"><a href="about.html" title="">Sản phẩm</a></h2>
-        <div class="row">
-          @foreach($cate_pro as $cate)
-            <div class="col-md-4 banner-item pro-item"><!-- col-sm-12  -->
-                <div class="banner-wrap">
-                    <a href="{{url('san-pham/'.$cate->alias)}}" title=""><img src="{{asset('upload/product/'.$cate->photo)}}" alt="" title=""></a>
-                    <div class="banner-intro">
-                        <div>
-                            <h2 class="text-uppercase banner-intro-tit">{{$cate->name}}</h2>
-                             <?php $products = DB::table('products')->where('cate_id',$cate->id)->get() ?>
-                            <h3 class="banner-intro-quan">{{ count($products) }} sản phẩm</h3>
+        <h2 class="title text-center">Sản phẩm</h2>
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" href="#tab1" role="tab" data-toggle="tab">
+                    <img src="images/tab1.png" alt="" title="" class="img-noactive">
+                    <img src="images/tab1-x.png" alt="" title="" class="img-active">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#tab2" role="tab" data-toggle="tab">
+                    <img src="images/tab2.png" alt="" title="" class="img-noactive">
+                    <img src="images/tab2-x.png" alt="" title="" class="img-active">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#tab3" role="tab" data-toggle="tab">
+                    <img src="images/tab3.png" alt="" title="" class="img-noactive">
+                    <img src="images/tab3-x.png" alt="" title="" class="img-active">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#tab4" role="tab" data-toggle="tab">
+                    <img src="images/tab4.png" alt="" title="" class="img-noactive">
+                    <img src="images/tab4-x.png" alt="" title="" class="img-active">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#tab5" role="tab" data-toggle="tab">
+                    <img src="images/tab5.png" alt="" title="" class="img-noactive">
+                    <img src="images/tab5-x.png" alt="" title="" class="img-active">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#tab5" role="tab" data-toggle="tab">
+                    <img src="images/tab6.png" alt="" title="" class="img-noactive">
+                    <img src="images/tab6-x.png" alt="" title="" class="img-active">
+                </a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in show active" id="tab1">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="product">
+                            <a href="chi-tiet-san-pham.html" title="" class="img-pro">
+                                <img src="images/sp1.png" alt="" title="">
+                            </a>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="chi-tiet-san-pham.html" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="new-price">50.000</span>
+                                    <span class="old-price">70.000</span>
+                                </p>
+                            </div>
+                            <div class="price-down">
+                                <span class="flex-center-center">-10%</span>
+                            </div>
                         </div>
-                        
-                        <a href="{{url('san-pham/'.$cate->alias)}}" title="" class="banner-btn">Xem ngay</a>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="chi-tiet-san-pham.html" title="">
+                                    <img src="images/sp2.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="chi-tiet-san-pham.html" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="new-price">50.000</span>
+                                    <span class="old-price">70.000</span>
+                                </p>
+                            </div>
+                            <div class="price-down">
+                                <span class="flex-center-center">-10%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="chi-tiet-san-pham.html" title="">
+                                    <img src="images/sp3.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="chi-tiet-san-pham.html" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="chi-tiet-san-pham.html" title="">
+                                    <img src="images/sp4.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="chi-tiet-san-pham.html" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="" title="">
+                                    <img src="images/sp5.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="" title="">
+                                    <img src="images/sp6.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="" title="">
+                                    <img src="images/sp3.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="" title="">
+                                    <img src="images/sp8.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-          @endforeach  
-            @foreach($product as $item)
-            <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="newpro-wrap">
-                    <a href="{{url('san-pham/'.$item->alias.'.html')}}" class="newpro-over" title=""><img src="{{asset('upload/product/'.$item->photo)}}" alt="" title=""></a>
-                </div>
-                <div class="newpro-intro">
-                    <h3 class="text-center newpro-intro-name"><a href="{{url('san-pham/'.$item->alias.'.html')}}" title="">{{$item->name}}</a></h3>
-                    <h4 class="text-center newpro-intro-price">$<span> {{number_format($item->price)}}</span></h4>
+            <div role="tabpanel" class="tab-pane fade" id="tab2">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="product">
+                            <a href="chi-tiet-san-pham.html" title="" class="img-pro">
+                                <img src="images/sp5.png" alt="" title="">
+                            </a>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="chi-tiet-san-pham.html" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="new-price">50.000</span>
+                                    <span class="old-price">70.000</span>
+                                </p>
+                            </div>
+                            <div class="price-down">
+                                <span class="flex-center-center">-10%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="chi-tiet-san-pham.html" title="">
+                                    <img src="images/sp3.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="chi-tiet-san-pham.html" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="new-price">50.000</span>
+                                    <span class="old-price">70.000</span>
+                                </p>
+                            </div>
+                            <div class="price-down">
+                                <span class="flex-center-center">-10%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="chi-tiet-san-pham.html" title="">
+                                    <img src="images/sp3.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="chi-tiet-san-pham.html" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="chi-tiet-san-pham.html" title="">
+                                    <img src="images/sp8.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="chi-tiet-san-pham.html" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="" title="">
+                                    <img src="images/sp1.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="" title="">
+                                    <img src="images/sp6.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="" title="">
+                                    <img src="images/sp3.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="" title="">
+                                    <img src="images/sp8.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            @endforeach
-            
-
+            <div role="tabpanel" class="tab-pane fade" id="tab3">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="product">
+                            <a href="chi-tiet-san-pham.html" title="" class="img-pro">
+                                <img src="images/sp1.png" alt="" title="">
+                            </a>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="chi-tiet-san-pham.html" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="new-price">50.000</span>
+                                    <span class="old-price">70.000</span>
+                                </p>
+                            </div>
+                            <div class="price-down">
+                                <span class="flex-center-center">-10%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="chi-tiet-san-pham.html" title="">
+                                    <img src="images/sp3.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="chi-tiet-san-pham.html" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="new-price">50.000</span>
+                                    <span class="old-price">70.000</span>
+                                </p>
+                            </div>
+                            <div class="price-down">
+                                <span class="flex-center-center">-10%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="chi-tiet-san-pham.html" title="">
+                                    <img src="images/sp5.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="chi-tiet-san-pham.html" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="chi-tiet-san-pham.html" title="">
+                                    <img src="images/sp4.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="chi-tiet-san-pham.html" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="" title="">
+                                    <img src="images/sp5.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="" title="">
+                                    <img src="images/sp6.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="" title="">
+                                    <img src="images/sp3.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="" title="">
+                                    <img src="images/sp8.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="tab4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="product">
+                            <a href="chi-tiet-san-pham.html" title="" class="img-pro">
+                                <img src="images/sp1.png" alt="" title="">
+                            </a>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="chi-tiet-san-pham.html" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="new-price">50.000</span>
+                                    <span class="old-price">70.000</span>
+                                </p>
+                            </div>
+                            <div class="price-down">
+                                <span class="flex-center-center">-10%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="chi-tiet-san-pham.html" title="">
+                                    <img src="images/sp2.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="chi-tiet-san-pham.html" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="new-price">50.000</span>
+                                    <span class="old-price">70.000</span>
+                                </p>
+                            </div>
+                            <div class="price-down">
+                                <span class="flex-center-center">-10%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="chi-tiet-san-pham.html" title="">
+                                    <img src="images/sp3.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="chi-tiet-san-pham.html" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="chi-tiet-san-pham.html" title="">
+                                    <img src="images/sp4.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="chi-tiet-san-pham.html" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="" title="">
+                                    <img src="images/sp5.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="" title="">
+                                    <img src="images/sp6.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="" title="">
+                                    <img src="images/sp3.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="" title="">
+                                    <img src="images/sp8.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="tab5">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="product">
+                            <a href="chi-tiet-san-pham.html" title="" class="img-pro">
+                                <img src="images/sp1.png" alt="" title="">
+                            </a>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="chi-tiet-san-pham.html" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="new-price">50.000</span>
+                                    <span class="old-price">70.000</span>
+                                </p>
+                            </div>
+                            <div class="price-down">
+                                <span class="flex-center-center">-10%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="chi-tiet-san-pham.html" title="">
+                                    <img src="images/sp2.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="chi-tiet-san-pham.html" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="new-price">50.000</span>
+                                    <span class="old-price">70.000</span>
+                                </p>
+                            </div>
+                            <div class="price-down">
+                                <span class="flex-center-center">-10%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="chi-tiet-san-pham.html" title="">
+                                    <img src="images/sp3.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="chi-tiet-san-pham.html" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="chi-tiet-san-pham.html" title="">
+                                    <img src="images/sp4.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="chi-tiet-san-pham.html" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="" title="">
+                                    <img src="images/sp5.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="" title="">
+                                    <img src="images/sp6.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="" title="">
+                                    <img src="images/sp3.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="product">
+                            <div class="img-pro">
+                                <a href="" title="">
+                                    <img src="images/sp8.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="info-pro">
+                                <h4>
+                                    <a href="" title="">
+                                        Cam Hà Giang
+                                    </a>
+                                </h4>
+                                <p class="price">
+                                    <span class="normal-price">60.000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="tab6">Continue Update</div>
         </div>
-        <div class="paginations">
-          {!! $product->links() !!}
+    </div>
+</section>
+<section class="brand">
+    <div class="container-fluid">
+        <div class="brand-item">
+            <img src="images/sx1.png" alt="" title="">
+        </div>
+        <div class="brand-item">
+            <img src="images/sx2.png" alt="" title="">
+        </div>
+        <div class="brand-item">
+            <img src="images/sx3.png" alt="" title="">
+        </div>
+        <div class="brand-item">
+            <img src="images/sx4.png" alt="" title="">
+        </div>
+        <div class="brand-item">
+            <img src="images/sx5.png" alt="" title="">
+        </div>
+        <div class="brand-item">
+            <img src="images/sx6.png" alt="" title="">
+        </div>
+    </div>
+</section>
+<section class="sale">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sure">
+                    <h4 class="text-center">Chất lượng sản phẩm của chúng tôi</h4>
+                    <p class="star text-center">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </p>
+                    <p class="text-center sure-note">Chúng tôi cam kết mang đến những sản phẩm <br/>chất lượng nhất đến quý khách hàng</p>
+                    <p>
+                        <img src="images/chatluong.png" alt="" title="" class="img-fluid">
+                    </p>
+                </div>
+            </div>
+            <div class="offset-md-1 col-md-7">
+                <div class="sale-day">
+                    <h2 class="title text-center">Khuyến mại trong ngày</h2>
+                    <p class="text-center">Những sản phẩm chúng tôi giảm giá trong ngày</p>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#tab1-s" role="tab" data-toggle="tab">
+                                <img src="images/tab1.png" alt="" title="" class="img-noactive">
+                                <img src="images/tab1-x.png" alt="" title="" class="img-active">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tab2-s" role="tab" data-toggle="tab">
+                                <img src="images/tab2.png" alt="" title="" class="img-noactive">
+                                <img src="images/tab2-x.png" alt="" title="" class="img-active">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tab3-s" role="tab" data-toggle="tab">
+                                <img src="images/tab3.png" alt="" title="" class="img-noactive">
+                                <img src="images/tab3-x.png" alt="" title="" class="img-active">
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in show active" id="tab1-s">
+                            <div class="owl-carousel sale-slider">
+                                <div class="product">
+                                    <a href="" title="" class="img-pro">
+                                        <img src="images/sp1.png" alt="" title="">
+                                    </a>
+                                    <div class="info-pro">
+                                        <h4>
+                                            <a href="" title="">
+                                                Cam Hà Giang
+                                            </a>
+                                        </h4>
+                                        <p class="price">
+                                            <span class="new-price">50.000</span>
+                                            <span class="old-price">70.000</span>
+                                        </p>
+                                    </div>
+                                    <div class="price-down">
+                                        <span class="flex-center-center">-10%</span>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <a href="" title="" class="img-pro">
+                                        <img src="images/sp2.png" alt="" title="">
+                                    </a>
+                                    <div class="info-pro">
+                                        <h4>
+                                            <a href="" title="">
+                                                Cam Hà Giang
+                                            </a>
+                                        </h4>
+                                        <p class="price">
+                                            <span class="new-price">50.000</span>
+                                            <span class="old-price">70.000</span>
+                                        </p>
+                                    </div>
+                                    <div class="price-down">
+                                        <span class="flex-center-center">-10%</span>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <a href="" title="" class="img-pro">
+                                        <img src="images/sp3.png" alt="" title="">
+                                    </a>
+                                    <div class="info-pro">
+                                        <h4>
+                                            <a href="" title="">
+                                                Cam Hà Giang
+                                            </a>
+                                        </h4>
+                                        <p class="price">
+                                            <span class="new-price">50.000</span>
+                                            <span class="old-price">70.000</span>
+                                        </p>
+                                    </div>
+                                    <div class="price-down">
+                                        <span class="flex-center-center">-10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Vegetable - Keep your life Organic always !</h4>
+            </div>
+            <div class="col-md-6 flex-center-end">
+                <form class="form-newsletter">
+                    <input type="text" placeholder="E - Mail">
+                    <button class="btn">Gửi</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="news">
+    <div class="container">
+        <h2 class="title text-center">Tin tức</h2>
+        <div class="row">
+            <div class="col-md-3 visible-desktop">
+                <a href="" title=""> <img src="images/a1.png" alt="" title=""></a>
+            </div>
+            <div class="col-md-9">
+                <div class="news-item">
+                    <div class="row">
+                        <div class="col-md-5 pdr-0">
+                            <div class="news-text">
+                                <h4>
+                                    <a href="" title="">Chợ Hà Nội khan hiếm rau xanh, giá tăng gấp đôi</a>
+                                </h4>
+                                <p class="time">23/ 09/ 2017</p>
+                                <p  class="mg-15">Sáng 23 -09 như thường lệ, chị Lê Thị Phúc (ngụ tại phố Hồng Mai, quận Hai Bà Trưng) ra chợ mua thức ăn. Khi qua hàng rau xanh, chị Phúc rất bất ngờ khi </p>
+                                <p class="text-center">
+                                    <a href="" title="" class="read flex-center-center">Xem tiếp</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-7 pdl-0">
+                            <div class="news-img">
+                                <a href="" title=""> <img src="images/news.png" alt="" title=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="row flex-row-reverse">
+                        <div class="col-md-5 pdl-0">
+                            <div class="news-text">
+                                <h4>
+                                    <a href="" title="">Chợ Hà Nội khan hiếm rau xanh, giá tăng gấp đôi</a>
+                                </h4>
+                                <p class="time">23/ 09/ 2017</p>
+                                <p class="mg-15">Sáng 23 -09 như thường lệ, chị Lê Thị Phúc (ngụ tại phố Hồng Mai, quận Hai Bà Trưng) ra chợ mua thức ăn. Khi qua hàng rau xanh, chị Phúc rất bất ngờ khi </p>
+                                <p class="text-center">
+                                    <a href="" title="" class="read flex-center-center">Xem tiếp</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-7 pdr-0">
+                            <div class="news-img">
+                                <a href="" title=""><img src="images/news2.png" alt="" title=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

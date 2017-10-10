@@ -74,6 +74,10 @@
 								      	<label class="control-label" for="inputError"><i class="fa fa-times-circle-o"></i> {!! $errors->first('txtAlias'); !!}</label>
 								      	@endif
 									</div>
+									<div class="form-group">
+										<label for="">Xuất xứ</label>
+										<input type="text" name="xuatxu" class="form-control" value="">
+									</div>
 									<!-- <div class="form-group">
 								      	<label for="ten">Thương hiệu</label>
 								      	<select name="txtThuonghieu" class="form-control">
@@ -96,13 +100,13 @@
 							      	<label for="ten">Giá cũ</label>
 							      	<input type="text" name="txtPriceOld"  onkeyup="FormatNumber(this);"  onKeyPress="return isNumberKey(event)" value=""  class="form-control" />
 								</div>
-								<div class="form-group">
+								<!-- <div class="form-group">
 							      	<label for="ten">Mã SP</label>
 							      	<input type="text" name="txtCode"  value=""  class="form-control" />
-								</div>
+								</div> -->
 								<div class="form-group">
 							      	<label for="desc">Mô tả</label>
-							      	<textarea name="txtDesc" rows="5" class="form-control"></textarea>
+							      	<textarea name="txtDesc" id="txtContent" rows="5" class="form-control"></textarea>
 								</div>
 								<!-- <div class="form-group">
 							      	<label for="alias">Chất liệu</label>

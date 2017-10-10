@@ -54,6 +54,7 @@
                 <th class="text-center with_dieuhuong">Stt</th>
                 <th>Danh mục cha</th>
                 <th>Tên danh mục</th>
+                <th>Hình ảnh</th>
                 <th class="text-center with_dieuhuong">Hiển thị</th>
                 <th class="text-center with_dieuhuong">Sửa</th>
                 <th class="text-center with_dieuhuong">Xóa</th>
@@ -75,6 +76,7 @@
                 @endif
                 </td>
                 <td>{{$item->name}}</td>
+                <td><img src="{{asset('upload/product/'.$item->photo)}}"></td>
                 <td class="text-center with_dieuhuong">
                   @if($item->status>0)
                     <a href="admin/productcate/edit?id={{$item->id}}&hienthi={{ time() }}" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i> Bật</a>

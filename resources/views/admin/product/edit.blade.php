@@ -70,6 +70,10 @@
 								      	<label class="control-label" for="inputError"><i class="fa fa-times-circle-o"></i> {!! $errors->first('txtAlias'); !!}</label>
 								      	@endif
 									</div>
+									<div class="form-group">
+										<label for="">Xuất xứ</label>
+										<input type="text" name="xuatxu" class="form-control" value="{{$data->xuatxu}}">
+									</div>
 									<!-- <div class="form-group">
 										<label for="">Thương hiệu</label>
 										<select name="txtThuonghieu" class="form-control" id="">
@@ -90,18 +94,18 @@
 								      	<label for="ten">Giá bán</label>
 								      	<input type="text" name="txtPrice" onkeyup="FormatNumber(this);"  onKeyPress="return isNumberKey(event)" value="{{ number_format($data->price,0,'',',') }}"  class="form-control" />
 									</div>
-									<div class="form-group">
+									<!-- <div class="form-group">
 								      	<label for="ten">Mã SP</label>
 								      	<input type="text" name="txtCode"  value="{{ $data->code }}"  class="form-control" />
-									</div>
+									</div> -->
 									<!-- <div class="form-group">
 								      	<label for="ten">Giảm giá</label>
 								      	<input type="text" name="txtSale"  value="{{ $data->sale }}"  class="form-control" />
 									</div> -->
-									<!-- <div class="form-group">
+									<div class="form-group">
 								      	<label for="ten">Giá cũ</label>
 								      	<input type="text" name="txtPriceOld" onkeyup="FormatNumber(this);"  onKeyPress="return isNumberKey(event)" value="{{ number_format($data->price_old,0,'',',') }}"  class="form-control" />
-									</div> -->
+									</div>
 									<div class="form-group">
 								      	<label for="desc">Mô tả</label>
 								      	<textarea name="txtDesc" rows="5" id="txtContent" class="form-control">{{ $data->mota }}</textarea>
@@ -230,7 +234,7 @@
 				    </div> -->
 			    	<div class="form-group">
 					    <label>
-				        	<input type="checkbox" name="noibat" {!! (!isset($data->noibat) || $data->noibat==1)?'checked="checked"':'' !!}> Nổi bật
+				        	<input type="checkbox" name="noibat" {!! (!isset($data->noibat) || $data->noibat==1)?'checked="checked"':'' !!}> Khuyến mại
 				    	</label>
 				    </div>
 				    <!-- <div class="form-group">

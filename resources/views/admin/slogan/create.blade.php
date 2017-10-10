@@ -1,6 +1,6 @@
 @extends('admin.master')
 @section('content')
-@section('controller','Bài viết '.'Banner')
+@section('controller','Slogan')
 @section('action','Add')
 <!-- Content Header (Page header) -->
 <section class="content-header">
@@ -21,35 +21,31 @@
       @include('admin.messages_error')
         <div class="box-body">
           
-          <form name="frmAdd" method="post" action="{!! route('admin.banner.postAdd') !!}" enctype="multipart/form-data">
+          <form name="frmAdd" method="post" action="{!! route('admin.slogan.postCreate') !!}" enctype="multipart/form-data">
             <input type="hidden" name="_token" value="{!! csrf_token() !!}" />
             <div class="form-group col-md-12 @if ($errors->first('fImages')!='') has-error @endif">
                 <label for="file">File ảnh</label>
-                  <input type="file" id="file" name="fImages" >
-                  <p class="help-block">Width:225px - Height: 162px</p>
-                  @if ($errors->first('fImages')!='')
-                    <label class="control-label" for="inputError"><i class="fa fa-times-circle-o"></i> {!! $errors->first('fImages'); !!}</label>
-                    @endif
+                <input type="file" id="file" name="fImages" >
+                <p class="help-block">Width:225px - Height: 162px</p>
+                @if ($errors->first('fImages')!='')
+                  <label class="control-label" for="inputError"><i class="fa fa-times-circle-o"></i> {!! $errors->first('fImages'); !!}</label>
+                  @endif
             </div>
               
             <div class="clearfix"></div>
             
             <div class="col-md-6">
               <div class="form-group">
-                <label for="">Link</label>
-                <input type="text" name="txtLink" class="form-control" value="">
+                <label for="">Tên</label>
+                <input type="text" name="txtName" class="form-control" value="">
               </div>
+              
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12">
               <div class="form-group">
-                <label for="">Trang</label>
-
-                <select name="position" class="form-control" id="">
-                  @foreach($data as $item)
-                  <option value="{{$item->id}}">{{$item->name}}</option>
-                  @endforeach
-                </select>
-              </div>
+                  <label for="">Nội dung</label>
+                  <textarea name="content" id="txtContent" cols="30" rows="10"></textarea>
+                </div>
             </div>
           <div class="clearfix"></div>
           <div class="box-footer">

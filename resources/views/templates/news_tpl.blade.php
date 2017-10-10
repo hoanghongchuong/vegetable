@@ -29,7 +29,7 @@
                                 <h4>
                                     <a href="{{url('tin-tuc/'.$item->alias.'.html')}}" title="">{{$item->name}}</a>
                                 </h4>
-                                <p class="time">23/ 09/ 2017</p>
+                                <p class="time">{{date('d/m/Y',strtotime($item->created_at))}}</p>
                                 <p class="mg-15">{{$item->mota}} </p>
                                 <p class="text-center">
                                     <a href="{{url('tin-tuc/'.$item->alias.'.html')}}" title="" class="read flex-center-center">Xem tiếp</a>
