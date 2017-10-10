@@ -1,5 +1,6 @@
 jQuery(function ($) {
 
+
         //project slide
         $('.sale-slider').owlCarousel({
             loop:true,
@@ -42,4 +43,27 @@ jQuery(function ($) {
         }
     });
 
+});
+$(document).ready(function(){
+    $('#addCart').click(function(){
+        var id = $('#product_id').val();
+        var qtt =1;
+        $.ajax({
+            url: window.urlAddCart,
+            type: 'POST',
+            cache: false,
+            data: {
+                qtt:qtt,
+                id:id,
+                _token: window.token
+            },
+            success: function(res){
+                if(res){
+                    $('#exampleModalLabel').html('Sản phẩm đã được thêm vào giỏ hàng !');
+                    $('#modal').modal('show');
+                }
+                
+            }
+        });
+    });
 });

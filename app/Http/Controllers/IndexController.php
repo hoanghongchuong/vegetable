@@ -77,6 +77,7 @@ class IndexController extends Controller {
 	{
 		$cate_pro = DB::table('product_categories')->where('status',1)->orderby('id','asc')->get();
 		$product = DB::table('products')->select()->where('status',1)->orderby('stt','desc')->paginate(12);
+		$tintuc_moinhat = DB::table('news')->select()->where('status',1)->where('com','tin-tuc')->orderBy('created_at','desc')->take(2)->get();
 		// dd($product_cate);
 		// $banner_danhmuc = DB::table('lienket')->select()->where('status',1)->where('com','chuyen-muc')->where('link','san-pham')->get()->first();
 		// $camnhan_khachhang = DB::table('lienket')->select()->where('status',1)->where('com','cam-nhan')->orderby('stt','asc')->get();
@@ -90,7 +91,7 @@ class IndexController extends Controller {
 		// $img_share = asset('upload/hinhanh/'.$banner_danhmuc->photo);
 		
 		// return view('templates.product_tpl', compact('product','banner_danhmuc','doitac','camnhan_khachhang','keyword','description','title','img_share'));
-			return view('templates.product_tpl', compact('title','keyword','description','product', 'com','cate_pro'));
+			return view('templates.product_tpl', compact('title','keyword','description','product', 'com','cate_pro','tintuc_moinhat'));
 	}
 
 	public function getProductList($id)
@@ -121,6 +122,7 @@ class IndexController extends Controller {
 	public function getProductDetail($id)
 	{
         //Tìm article thông qua mã id tương ứng
+        $cate_pro = DB::table('product_categories')->where('status',1)->orderby('id','asc')->get();
 		$product_detail = DB::table('products')->select()->where('status',1)->where('alias',$id)->get()->first();
 		if(!empty($product_detail)){
 			$banner_danhmuc = DB::table('lienket')->select()->where('status',1)->where('com','chuyen-muc')->where('link','san-pham')->get()->first();
@@ -140,7 +142,7 @@ class IndexController extends Controller {
 			$img_share = asset('upload/product/'.$product_detail->photo);
 
 			// End cấu hình SEO
-			return view('templates.product_detail_tpl', compact('product_detail','banner_danhmuc','keyword','description','title','img_share','product_khac','album_hinh','cateProduct','productSameCate'));
+			return view('templates.product_detail_tpl', compact('product_detail','banner_danhmuc','keyword','description','title','img_share','product_khac','album_hinh','cateProduct','productSameCate','cate_pro'));
 		}else{
 			return redirect()->route('getErrorNotFount');
 		}
@@ -465,7 +467,7 @@ class IndexController extends Controller {
 	public function getCart()
 	{
 		$product_cart= Cart::content();
-		// dd($product_cart);
+		dd($product_cart);
 		$bank = DB::table('bank_account')->get();
 		$total = $this->getTotalPrice();
 		$province = DB::table('province')->get();
@@ -483,8 +485,9 @@ class IndexController extends Controller {
 
 	public function addCart(Request $req)
 	{
-		$data = $req->only('product_id','product_numb');
-		$product = DB::table('products')->select()->where('status',1)->where('id',$data['product_id'])->first();
+		// $data = $req->only('product_id');
+		$product = DB::table('products')->select()->where('status',1)->where('id',$req->id)->first();
+		dd($product);
 		if (!$product) {
 			die('product not found');
 		}
@@ -492,12 +495,13 @@ class IndexController extends Controller {
 		Cart::add(array(
 				'id'=>$product->id,
 				'name'=>$product->name,
-				'qty'=>$data['product_numb'],
+				'qty'=>1,
 				'price'=>$product->price,
 				'options'=>array('photo'=>$product->photo,'code'=>$product->code)));
 
-		return redirect(route('getCart'));
+		// return redirect(route('getCart'));
 	}
+
 
 	public function updateCart(Request $req){
 		$data = $req->numb;

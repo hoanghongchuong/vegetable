@@ -1167,3 +1167,12 @@ menu on mobile
     background: none !important;
     color: #409e03 !important;
 }
+.xx{
+    border: 1px solid transparent;
+    color: #fff;
+    width: 183px;
+    height: 40px;
+    background-color: #4db510;
+    text-transform: uppercase;
+    transition: all 0.4s ease
+}

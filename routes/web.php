@@ -34,7 +34,10 @@ Route::get('sap-xep','IndexController@SapXep')->name('sapxep');
 // gio hang
 Route::get('gio-hang',['as'=>'getCart', 'uses'=>'IndexController@getCart']);
 Route::post('cart/add', ['as' => 'addProductToCart', 'uses' => 'IndexController@addCart']);
+// 
+// Route::get('add/cart/{id}', ['as' => 'addCart', 'uses' => 'IndexController@addCart']);
 Route::post('cart/update',['as' => 'updateCart', 'uses' => 'IndexController@updateCart']);
+
 // Route::get('updatecart/{id}/{qty}',['as'=>'updatecart','uses'=>'IndexController@updatecart']);
 Route::get('xoa-gio-hang/{id}','IndexController@deleteCart');
 Route::post('gui-don-hang', ['as' =>'postOrder', 'uses'=> 'IndexController@postOrder']);
@@ -348,7 +351,7 @@ Route::group(['middleware' =>'authen', 'prefix' => 'admin'], function(){
 		Route::get('delete/{id}',['as'=>'admin.slogan.delete', 'uses' => 'Admin\SloganController@delete']);
 	});
 
-	
+
 
 	Route::post('uploadImg', ['as'=>'admin.uploadImg' ,'uses'=>'Admin/UploadController@uploadImg']);
 	Route::post('dropzone/store', ['as'=>'dropzone.store','uses'=>'Admin/ProductController@dropzoneStore']);

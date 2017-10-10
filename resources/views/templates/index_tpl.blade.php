@@ -65,10 +65,10 @@ $cateProducts = Cache::get('cateProducts');
 
             <!-- Tab panes -->
             <div class="tab-content">
-                 @foreach($cate_pro as $k=>$cates)
+                @foreach($cate_pro as $k=>$cates)
                 <div role="tabpanel" class="tab-pane fade in show @if($k ==0) active @endif" id="tab{{$k}}">
                     <div class="row">
-                        <?php $products = DB::table('products')->where('cate_id',$cates->id)->orderBy('id','desc')->get() ?>
+                        <?php $products = DB::table('products')->where('cate_id',$cates->id)->orderBy('id','desc')->take(8)->get() ?>
                         @foreach($products as $product)
                         <div class="col-md-3">
                             <div class="product">

@@ -20,7 +20,9 @@
                         <img src="{{asset('public/images/gach.png')}}" title="" alt="">
                     </h1>
                     <p class="time">{{date('d/m/Y', strtotime($news_detail->created_at))}}</p>
-                    
+                    <div class="content-news">
+                        {!! $news_detail->content !!}
+                    </div>
                     <p>
                        <div class="comment">
                             <div class="fb-comments" data-href="{{url('san-pham/'.$news_detail->alias.'.html')}}" data-numposts="2"></div>
