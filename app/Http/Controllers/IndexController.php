@@ -179,9 +179,9 @@ class IndexController extends Controller {
 		$img_share = '';
 		// End cấu hình SEO
 		
-		$product = DB::table('products')->select()->where('name', 'LIKE', '%' . $search . '%')->orderBy('id','DESC')->get();
+		$products = DB::table('products')->select()->where('name', 'LIKE', '%' . $search . '%')->orderBy('id','DESC')->get();
 		// dd($product);
-		return view('templates.search_tpl', compact('product','banner_danhmuc','keyword','description','title','img_share','search','cate_pro','thuonghieus'));
+		return view('templates.search_tpl', compact('products','banner_danhmuc','keyword','description','title','img_share','search','cate_pro','thuonghieus'));
 	}
 
 	public function getNews()
@@ -486,21 +486,24 @@ class IndexController extends Controller {
 	public function addCart(Request $req)
 	{
 		// $data = $req->only('product_id');
-		$product = DB::table('products')->select()->where('status',1)->where('id',$req->id)->first();
-		if (!$product) {
-			die('product not found');
+		try {
+			$product = DB::table('products')->select()->where('status',1)->where('id',$req->id)->first();
+			if (!$product) {
+				die('product not found');
+			}
+			Cart::add(array(
+					'id'=>$product->id,
+					'name'=>$product->name,
+					'qty'=>1,
+					'price'=>$product->price,
+					'options'=>array('photo'=>$product->photo,'code'=>$product->code)));
+			return 1;
+		} catch (\Exception $e) {
+			return 0;
 		}
 		
-		Cart::add(array(
-				'id'=>$product->id,
-				'name'=>$product->name,
-				'qty'=>1,
-				'price'=>$product->price,
-				'options'=>array('photo'=>$product->photo,'code'=>$product->code)));
-
 		// return redirect(route('getCart'));
 	}
-
 
 	public function updateCart(Request $req){
 		$data = $req->numb;
@@ -512,12 +515,14 @@ class IndexController extends Controller {
 		}		
 		return redirect(route('getCart'));
 	}
+	public function thanhtoan(){
 
+		return view('templates.thanhtoan_tpl');
+	}
 	public function deleteCart($id){
         Cart::remove($id);
         return redirect('gio-hang');
     }
-
     public function checkCard(Request $req) {
     	$card = (new CampaignCard)
     		->join('campaigns', 'campaign_cards.campaign_id', '=', 'campaigns.id')
@@ -544,7 +549,6 @@ class IndexController extends Controller {
     	}
     	return response()->json(false);
     }
-
     protected function getTotalPrice() 
     {
     	$cart = Cart::content();
@@ -554,7 +558,6 @@ class IndexController extends Controller {
     	}
     	return $total;
     }
-
     public function postOrder(Request $req){
     	$cart = Cart::content();
     	$bill = new Bill;
@@ -563,7 +566,7 @@ class IndexController extends Controller {
     	$bill->phone = $req->phone;
     	$bill->note = $req->note;
     	$bill->address = $req->address;
-    	$bill->payment = (int)($req->payment_method);
+    	// $bill->payment = (int)($req->payment_method);
     	// $bill->province = $req->province;
     	// $bill->district = $req->district;
     	$total = $this->getTotalPrice();

@@ -147,20 +147,20 @@
         <!-- <li><a href="admin/lienket?type=gioi-thieu"><i class="fa fa-circle-o"></i> <span>Hình ảnh giới thiệu</span></a></li> -->
        <!--  <li><a href="admin/lienket?type=tieu-chi"><i class="fa fa-circle-o"></i> <span>Tiêu chí hội viên</span></a></li>
         <li><a href="admin/slider?type=thu-vien-anh"><i class="fa fa-circle-o"></i> <span>Thư viện ảnh</span></a></li> -->
-        <li><a href="admin/slider?type=chinh-sach"><i class="fa fa-circle-o"></i> <span>Quản lý chính sách</span></a></li>
-        <li class="treeview">
+        <!-- <li><a href="admin/slider?type=chinh-sach"><i class="fa fa-circle-o"></i> <span>Quản lý chính sách</span></a></li> -->
+        <!-- <li class="treeview">
           <a href="#">
             <i class="fa fa-pie-chart"></i>
             <span>Hình ảnh slider</span>
             <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
-            <!-- <li><a href="admin/lienket?type=slider"><i class="fa fa-circle-o"></i>Quản lý slider</a></li> -->
+            <li><a href="admin/lienket?type=slider"><i class="fa fa-circle-o"></i>Quản lý slider</a></li>
             <li><a href="admin/slider?type=gioi-thieu"><i class="fa fa-circle-o"></i> <span>Quản lý slider</span></a></li>
-            <!-- <li><a href="admin/lienket?type=chuyen-muc"><i class="fa fa-circle-o"></i> Banner chuyên mục</a></li> -->
-            <!-- <li><a href="admin/lienket?type=chi-nhanh"><i class="fa fa-circle-o"></i> Quản lý chi nhánh</a></li> -->
+            <li><a href="admin/lienket?type=chuyen-muc"><i class="fa fa-circle-o"></i> Banner chuyên mục</a></li>
+            <li><a href="admin/lienket?type=chi-nhanh"><i class="fa fa-circle-o"></i> Quản lý chi nhánh</a></li>
           </ul>
-        </li>
+        </li> -->
         <!-- <li><a href="admin/chinhanh"><i class="fa fa-envelope"></i><span>Quản lý chi nhánh</span></a></li> -->
         <!-- <li class="treeview">
           <a href="#">
@@ -188,8 +188,8 @@
         <!-- <li><a href="{{ asset('admin/menu?type=menu-top') }}"><i class="fa fa-circle-o"></i> <span>Quản lý menu</span></a></li> -->
         <li><a href="admin/slogan"><i class="fa fa-gear" aria-hidden="true"></i> <span>Quản lý slogan</span></a></li>
         <!-- <li><a href="admin/position"><i class="fa fa-gear" aria-hidden="true"></i> <span>Vị trí quảng cáo</span></a></li> -->
-        <li><a href="admin/banner"><i class="fa fa-gear" aria-hidden="true"></i> <span>Quản lý banner</span></a></li>
-         <li><a href="admin/partners"><i class="fa fa-circle-o"></i> <span>Đối tác</span></a></li>
+        <!-- <li><a href="admin/banner"><i class="fa fa-gear" aria-hidden="true"></i> <span>Quản lý banner</span></a></li> -->
+         <!-- <li><a href="admin/partners"><i class="fa fa-circle-o"></i> <span>Đối tác</span></a></li> -->
         <li><a href="{{ asset('admin/setting') }}"><i class="fa fa-gear" aria-hidden="true"></i> <span>Quản lý thiết lập</span></a></li>
         <!-- <li class="treeview">
           <a href="#">

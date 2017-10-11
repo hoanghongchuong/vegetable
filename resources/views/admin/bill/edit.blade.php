@@ -61,13 +61,13 @@
 											<textarea name="" id="" cols="100" rows="5">{{$data->note}}</textarea>
 										</div>
 									</div>
-									<div class="form-group">
+									<!-- <div class="form-group">
 								      	<label for="txtAddress">Phương thức thanh toán</label>
 								      	<input type="text"  disabled value="<?php 
 								      		if($data->payment ==0)  echo "Thanh toán khi giao hàng";  
 								      		if($data->payment == 1) echo "Chuyển khoản qua ngân hàng"; 
 								      	?>"  class="form-control" />
-									</div>
+									</div> -->
 									<div class="form-group">
 								      	<label for="ten">Tình trạng đơn hàng</label>
 								      	<select name="status" class="form-control">

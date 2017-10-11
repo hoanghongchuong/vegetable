@@ -56,7 +56,8 @@ $cateProducts = Cache::get('cateProducts');
                @foreach($cate_pro as $key=>$cate)
                 <li class="nav-item">
                     <a class="nav-link @if($key ==0) active @endif" href="#tab{{$key}}" role="tab" data-toggle="tab">
-                        <img src="{{asset('upload/product/'.$cate->photo)}}" alt="" title="" class="">
+                        <img src="{{asset('upload/product/'.$cate->photo)}}" alt="" title="" class="img-noactive">
+                        <img src="{{asset('upload/product/'.$cate->background)}}" alt="" title="" class="img-active">
                     </a>
                 </li>
                 @endforeach
@@ -148,210 +149,47 @@ $cateProducts = Cache::get('cateProducts');
                         <h2 class="title text-center">Khuyến mại trong ngày</h2>
                         <p class="text-center">Những sản phẩm chúng tôi giảm giá trong ngày</p>
                         <ul class="nav nav-tabs" role="tablist">
+                            @foreach($cate_pro as $key=>$cate)
                             <li class="nav-item">
-                                <a class="nav-link active" href="#tab1-s" role="tab" data-toggle="tab">
-                                    <img src="images/tab1.png" alt="" title="" class="img-noactive">
-                                    <img src="images/tab1-x.png" alt="" title="" class="img-active">
+                                <a class="nav-link @if ($key == 0) active @endif" href="#tab{{$key}}-s" role="tab" data-toggle="tab">
+                                    <img src="{{asset('upload/product/'.$cate->photo)}}" alt="" title="" class="img-noactive">
+                                    <img src="{{asset('upload/product/'.$cate->background)}}" alt="" title="" class="img-active">
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#tab2-s" role="tab" data-toggle="tab">
-                                    <img src="images/tab2.png" alt="" title="" class="img-noactive">
-                                    <img src="images/tab2-x.png" alt="" title="" class="img-active">
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#tab3-s" role="tab" data-toggle="tab">
-                                    <img src="images/tab3.png" alt="" title="" class="img-noactive">
-                                    <img src="images/tab3-x.png" alt="" title="" class="img-active">
-                                </a>
-                            </li>
+                            @endforeach
+                            
                         </ul>
                         <!-- Tab panes -->
                         <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane fade in show active" id="tab1-s">
+                            @foreach($cate_pro as $key=>$cate)
+                            <?php $productCates = DB::table('products')->where('noibat',1)->where('cate_id',$cate->id)->get();?>
+                            <div role="tabpanel" class="tab-pane fade in show @if ($key == 0) active @endif" id="tab{{$key}}-s">
                                 <div class="owl-carousel sale-slider">
+                                    @foreach($productCates as $productKM)   
                                     <div class="product">
-                                        <a href="chi-tiet-san-pham.html" title="" class="img-pro">
-                                            <img src="images/sp1.png" alt="" title="">
+                                        <a href="{{url('san-pham/'.$productKM->alias.'.html')}}" title="" class="img-pro">
+                                            <img src="{{asset('upload/product/'.$productKM->photo)}}" alt="" title="">
                                         </a>
                                         <div class="info-pro">
                                             <h4>
-                                                <a href="chi-tiet-san-pham.html" title="">
-                                                    Cam Hà Giang
+                                                <a href="{{url('san-pham/'.$productKM->alias.'.html')}}" title="">
+                                                    {{$productKM->name}}
                                                 </a>
                                             </h4>
                                             <p class="price">
-                                                <span class="new-price">50.000</span>
+                                                <span class="new-price">{{number_format($productKM->price)}}</span>
                                                 <span class="old-price">70.000</span>
                                             </p>
                                         </div>
-                                        <div class="price-down">
+                                        <!-- <div class="price-down">
                                             <span class="flex-center-center">-10%</span>
-                                        </div>
+                                        </div> -->
                                     </div>
-                                    <div class="product">
-                                        <a href="chi-tiet-san-pham.html" title="" class="img-pro">
-                                            <img src="images/sp2.png" alt="" title="">
-                                        </a>
-                                        <div class="info-pro">
-                                            <h4>
-                                                <a href="chi-tiet-san-pham.html" title="">
-                                                    Cam Hà Giang
-                                                </a>
-                                            </h4>
-                                            <p class="price">
-                                                <span class="new-price">50.000</span>
-                                                <span class="old-price">70.000</span>
-                                            </p>
-                                        </div>
-                                        <div class="price-down">
-                                            <span class="flex-center-center">-10%</span>
-                                        </div>
-                                    </div>
-                                    <div class="product">
-                                        <a href="chi-tiet-san-pham.html" title="" class="img-pro">
-                                            <img src="images/sp3.png" alt="" title="">
-                                        </a>
-                                        <div class="info-pro">
-                                            <h4>
-                                                <a href="chi-tiet-san-pham.html" title="">
-                                                    Cam Hà Giang
-                                                </a>
-                                            </h4>
-                                            <p class="price">
-                                                <span class="new-price">50.000</span>
-                                                <span class="old-price">70.000</span>
-                                            </p>
-                                        </div>
-                                        <div class="price-down">
-                                            <span class="flex-center-center">-10%</span>
-                                        </div>
-                                    </div>
+                                    @endforeach
                                 </div>
                             </div>
-                            <div role="tabpanel" class="tab-pane fade in show active" id="tab2-s">
-                                <div class="owl-carousel sale-slider">
-                                    <div class="product">
-                                        <a href="chi-tiet-san-pham.html" title="" class="img-pro">
-                                            <img src="images/sp6.png" alt="" title="">
-                                        </a>
-                                        <div class="info-pro">
-                                            <h4>
-                                                <a href="chi-tiet-san-pham.html" title="">
-                                                    Cam Hà Giang
-                                                </a>
-                                            </h4>
-                                            <p class="price">
-                                                <span class="new-price">50.000</span>
-                                                <span class="old-price">70.000</span>
-                                            </p>
-                                        </div>
-                                        <div class="price-down">
-                                            <span class="flex-center-center">-10%</span>
-                                        </div>
-                                    </div>
-                                    <div class="product">
-                                        <a href="chi-tiet-san-pham.html" title="" class="img-pro">
-                                            <img src="images/sp5.png" alt="" title="">
-                                        </a>
-                                        <div class="info-pro">
-                                            <h4>
-                                                <a href="chi-tiet-san-pham.html" title="">
-                                                    Cam Hà Giang
-                                                </a>
-                                            </h4>
-                                            <p class="price">
-                                                <span class="new-price">50.000</span>
-                                                <span class="old-price">70.000</span>
-                                            </p>
-                                        </div>
-                                        <div class="price-down">
-                                            <span class="flex-center-center">-10%</span>
-                                        </div>
-                                    </div>
-                                    <div class="product">
-                                        <a href="chi-tiet-san-pham.html" title="" class="img-pro">
-                                            <img src="images/sp4.png" alt="" title="">
-                                        </a>
-                                        <div class="info-pro">
-                                            <h4>
-                                                <a href="chi-tiet-san-pham.html" title="">
-                                                    Cam Hà Giang
-                                                </a>
-                                            </h4>
-                                            <p class="price">
-                                                <span class="new-price">50.000</span>
-                                                <span class="old-price">70.000</span>
-                                            </p>
-                                        </div>
-                                        <div class="price-down">
-                                            <span class="flex-center-center">-10%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div role="tabpanel" class="tab-pane fade in show active" id="tab3-s">
-                                <div class="owl-carousel sale-slider">
-                                    <div class="product">
-                                        <a href="chi-tiet-san-pham.html" title="" class="img-pro">
-                                            <img src="images/sp2.png" alt="" title="">
-                                        </a>
-                                        <div class="info-pro">
-                                            <h4>
-                                                <a href="chi-tiet-san-pham.html" title="">
-                                                    Cam Hà Giang
-                                                </a>
-                                            </h4>
-                                            <p class="price">
-                                                <span class="new-price">50.000</span>
-                                                <span class="old-price">70.000</span>
-                                            </p>
-                                        </div>
-                                        <div class="price-down">
-                                            <span class="flex-center-center">-10%</span>
-                                        </div>
-                                    </div>
-                                    <div class="product">
-                                        <a href="chi-tiet-san-pham.html" title="" class="img-pro">
-                                            <img src="images/sp4.png" alt="" title="">
-                                        </a>
-                                        <div class="info-pro">
-                                            <h4>
-                                                <a href="chi-tiet-san-pham.html" title="">
-                                                    Cam Hà Giang
-                                                </a>
-                                            </h4>
-                                            <p class="price">
-                                                <span class="new-price">50.000</span>
-                                                <span class="old-price">70.000</span>
-                                            </p>
-                                        </div>
-                                        <div class="price-down">
-                                            <span class="flex-center-center">-10%</span>
-                                        </div>
-                                    </div>
-                                    <div class="product">
-                                        <a href="chi-tiet-san-pham.html" title="" class="img-pro">
-                                            <img src="images/sp3.png" alt="" title="">
-                                        </a>
-                                        <div class="info-pro">
-                                            <h4>
-                                                <a href="chi-tiet-san-pham.html" title="">
-                                                    Cam Hà Giang
-                                                </a>
-                                            </h4>
-                                            <p class="price">
-                                                <span class="new-price">50.000</span>
-                                                <span class="old-price">70.000</span>
-                                            </p>
-                                        </div>
-                                        <div class="price-down">
-                                            <span class="flex-center-center">-10%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
+                            
                         </div>
                     </div>
                 </div>

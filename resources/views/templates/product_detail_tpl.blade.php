@@ -266,7 +266,23 @@
                 </div>
             </div>
     </section>
-   
+   <!-- Modal -->
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="{{url('gio-hang')}}" class="btn btn1 btn-secondary flex-center-center">xem giỏ hàng</a>
+                        <a href="{{url('san-pham')}}" class="btn btn2 btn-primary flex-center-center">tiếp tục mua hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 @endsection
 <script>
     window.urlAddCart = '{{ route("addProductToCart") }}';

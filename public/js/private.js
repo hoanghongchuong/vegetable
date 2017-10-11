@@ -58,6 +58,7 @@ $(document).ready(function(){
                 _token: window.token
             },
             success: function(res){
+                console.log(res);
                 if(res){
                     $('#exampleModalLabel').html('Sản phẩm đã được thêm vào giỏ hàng !');
                     $('#modal').modal('show');

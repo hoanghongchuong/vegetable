@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 07, 2017 at 03:32 AM
+-- Generation Time: Oct 11, 2017 at 06:12 AM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.0.22
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `fashion`
+-- Database: `vegetable`
 --
 
 -- --------------------------------------------------------
@@ -51,7 +51,7 @@ CREATE TABLE `about` (
 --
 
 INSERT INTO `about` (`id`, `user_id`, `name`, `alias`, `photo`, `mota`, `link`, `content`, `status`, `title`, `keyword`, `description`, `com`, `created_at`, `updated_at`) VALUES
-(1, 5, 'Giới thiệu', 'gioi-thieu', NULL, '<p>C&acirc;y cảnh mini, c&acirc;y cảnh để b&agrave;n đang l&agrave; xu hướng được giới trẻ lựa chọn để trang tr&iacute; cho g&oacute;c học tập, b&agrave;n l&agrave;m việc, b&agrave;n trang điểm, hay những qu&aacute;n c&agrave; ph&ecirc;, văn ph&ograve;ng l&agrave;m việc,&hellip;C&acirc;y c&oacute; gi&aacute; trị th&acirc;m mỹ cao lại tiết kiệm kh&ocirc;ng gian.</p>\r\n<p>&nbsp;</p>', NULL, '<p>C&oacute; thể n&oacute;i, sự hiện diện của c&acirc;y xanh kh&ocirc;ng chỉ gi&uacute;p điều h&ograve;a kh&ocirc;ng kh&iacute;, t&ocirc; điểm n&eacute;t xanh tươi mới m&agrave; c&ograve;n mang theo &yacute; nghĩa phong thủy, gi&uacute;p mang lại t&agrave;i lộc cho gia chủ. Kh&ocirc;ng những thế nếu bạn đang muốn trang tr&iacute; cho căn ph&ograve;ng nhỏ của m&igrave;nh hoặc F5 b&agrave;n l&agrave;m việc th&igrave; những loại c&acirc;y cảnh dưới đ&acirc;y l&agrave; lựa chọn v&ocirc; c&ugrave;ng th&iacute;ch hợp. C&oacute; thể n&oacute;i, sự hiện diện của c&acirc;y xanh kh&ocirc;ng chỉ gi&uacute;p điều h&ograve;a kh&ocirc;ng kh&iacute;, t&ocirc; điểm n&eacute;t xanh tươi mới m&agrave; c&ograve;n mang theo &yacute; nghĩa phong thủy, gi&uacute;p mang lại t&agrave;i lộc cho gia chủ. Kh&ocirc;ng những thế nếu bạn đang muốn trang tr&iacute; cho căn ph&ograve;ng nhỏ của m&igrave;nh hoặc F5 b&agrave;n l&agrave;m việc th&igrave; những loại c&acirc;y cảnh dưới đ&acirc;y l&agrave; lựa chọn v&ocirc; c&ugrave;ng th&iacute;ch hợp.<br /><br />C&oacute; thể n&oacute;i, sự hiện diện của c&acirc;y xanh kh&ocirc;ng chỉ gi&uacute;p điều h&ograve;a kh&ocirc;ng kh&iacute;, t&ocirc; điểm n&eacute;t xanh tươi mới m&agrave; c&ograve;n mang theo &yacute; nghĩa phong thủy, gi&uacute;p mang lại t&agrave;i lộc cho gia chủ. Kh&ocirc;ng những thế nếu bạn đang muốn trang tr&iacute; cho căn ph&ograve;ng nhỏ của m&igrave;nh hoặc F5 b&agrave;n l&agrave;m việc th&igrave; những loại c&acirc;y cảnh dưới đ&acirc;y l&agrave; lựa chọn v&ocirc; c&ugrave;ng th&iacute;ch hợp. C&oacute; thể n&oacute;i, sự hiện diện của c&acirc;y xanh kh&ocirc;ng chỉ gi&uacute;p điều h&ograve;a kh&ocirc;ng kh&iacute;, t&ocirc; điểm n&eacute;t xanh tươi mới m&agrave; c&ograve;n mang theo &yacute; nghĩa phong thủy, gi&uacute;p mang lại t&agrave;i lộc cho gia chủ. Kh&ocirc;ng những thế nếu bạn đang muốn trang tr&iacute; cho căn ph&ograve;ng nhỏ của m&igrave;nh hoặc F5 b&agrave;n l&agrave;m việc th&igrave; những loại c&acirc;y cảnh dưới đ&acirc;y l&agrave; lựa chọn v&ocirc; c&ugrave;ng th&iacute;ch hợp.C&oacute; thể n&oacute;i, sự hiện diện của c&acirc;y xanh kh&ocirc;ng chỉ gi&uacute;p điều h&ograve;a kh&ocirc;ng kh&iacute;, t&ocirc; điểm n&eacute;t xanh tươi mới m&agrave; c&ograve;n mang theo &yacute; nghĩa phong thủy, gi&uacute;p mang lại t&agrave;i lộc cho gia chủ. Kh&ocirc;ng những thế nếu bạn đang muốn trang tr&iacute; cho căn ph&ograve;ng nhỏ của m&igrave;nh hoặc F5 b&agrave;n l&agrave;m việc th&igrave; những loại c&acirc;y cảnh dưới đ&acirc;y l&agrave; lựa chọn v&ocirc; c&ugrave;ng th&iacute;ch hợp.<br />C&oacute; thể n&oacute;i, sự hiện diện của c&acirc;y xanh kh&ocirc;ng chỉ gi&uacute;p điều h&ograve;a kh&ocirc;ng kh&iacute;, t&ocirc; điểm n&eacute;t xanh tươi mới m&agrave; c&ograve;n mang theo &yacute; nghĩa phong thủy, gi&uacute;p mang lại t&agrave;i lộc cho gia chủ. Kh&ocirc;ng những thế nếu bạn đang muốn trang tr&iacute; cho căn ph&ograve;ng nhỏ của m&igrave;nh hoặc F5 b&agrave;n l&agrave;m việc th&igrave; những loại c&acirc;y cảnh dưới đ&acirc;y l&agrave; lựa chọn v&ocirc; c&ugrave;ng th&iacute;ch hợp. C&oacute; thể n&oacute;i, sự hiện diện của c&acirc;y xanh kh&ocirc;ng chỉ gi&uacute;p điều h&ograve;a kh&ocirc;ng kh&iacute;, t&ocirc; điểm n&eacute;t xanh tươi mới m&agrave; c&ograve;n mang theo &yacute; nghĩa phong thủy, gi&uacute;p mang lại t&agrave;i lộc cho gia chủ. Kh&ocirc;ng những thế nếu bạn đang muốn trang tr&iacute; cho căn ph&ograve;ng nhỏ của m&igrave;nh hoặc F5 b&agrave;n l&agrave;m việc th&igrave; những loại c&acirc;y cảnh dưới đ&acirc;y l&agrave; lựa chọn v&ocirc; c&ugrave;ng th&iacute;ch hợp.</p>\r\n<p><img src=\"http://localhost/caycanh/upload/hinhanh/bn-about-1.png\" alt=\"\" width=\"1903\" height=\"482\" /></p>\r\n<p>C&oacute; thể n&oacute;i, sự hiện diện của c&acirc;y xanh kh&ocirc;ng chỉ gi&uacute;p điều h&ograve;a kh&ocirc;ng kh&iacute;, t&ocirc; điểm n&eacute;t xanh tươi mới m&agrave; c&ograve;n mang theo &yacute; nghĩa phong thủy, gi&uacute;p mang lại t&agrave;i lộc cho gia chủ. Kh&ocirc;ng những thế nếu bạn đang muốn trang tr&iacute; cho căn ph&ograve;ng nhỏ của m&igrave;nh hoặc F5 b&agrave;n l&agrave;m việc th&igrave; những loại c&acirc;y cảnh dưới đ&acirc;y l&agrave; lựa chọn v&ocirc; c&ugrave;ng th&iacute;ch hợp. C&oacute; thể n&oacute;i, sự hiện diện của c&acirc;y xanh kh&ocirc;ng chỉ gi&uacute;p điều h&ograve;a kh&ocirc;ng kh&iacute;, t&ocirc; điểm n&eacute;t xanh tươi mới m&agrave; c&ograve;n mang theo &yacute; nghĩa phong thủy, gi&uacute;p mang lại t&agrave;i lộc cho gia chủ. Kh&ocirc;ng những thế nếu bạn đang muốn trang tr&iacute; cho căn ph&ograve;ng nhỏ của m&igrave;nh hoặc F5 b&agrave;n l&agrave;m việc th&igrave; những loại c&acirc;y cảnh dưới đ&acirc;y l&agrave; lựa chọn v&ocirc; c&ugrave;ng th&iacute;ch hợp.<br /><br />C&oacute; thể n&oacute;i, sự hiện diện của c&acirc;y xanh kh&ocirc;ng chỉ gi&uacute;p điều h&ograve;a kh&ocirc;ng kh&iacute;, t&ocirc; điểm n&eacute;t xanh tươi mới m&agrave; c&ograve;n mang theo &yacute; nghĩa phong thủy, gi&uacute;p mang lại t&agrave;i lộc cho gia chủ. Kh&ocirc;ng những thế nếu bạn đang muốn trang tr&iacute; cho căn ph&ograve;ng nhỏ của m&igrave;nh hoặc F5 b&agrave;n l&agrave;m việc th&igrave; những loại c&acirc;y cảnh dưới đ&acirc;y l&agrave; lựa chọn v&ocirc; c&ugrave;ng th&iacute;ch hợp. C&oacute; thể n&oacute;i, sự hiện diện của c&acirc;y xanh kh&ocirc;ng chỉ gi&uacute;p điều h&ograve;a kh&ocirc;ng kh&iacute;, t&ocirc; điểm n&eacute;t xanh tươi mới m&agrave; c&ograve;n mang theo &yacute; nghĩa phong thủy, gi&uacute;p mang lại t&agrave;i lộc cho gia chủ. Kh&ocirc;ng những thế nếu bạn đang muốn trang tr&iacute; cho căn ph&ograve;ng nhỏ của m&igrave;nh hoặc F5 b&agrave;n l&agrave;m việc th&igrave; những loại c&acirc;y cảnh dưới đ&acirc;y l&agrave; lựa chọn v&ocirc; c&ugrave;ng th&iacute;ch hợp.&nbsp;</p>', 1, 'gioi thieu', 'gioi thieu, thieu gioi', 'gioi thieu về công ty', NULL, '2017-09-25 07:11:11', '2017-09-25 00:11:11');
+(1, 5, NULL, '', NULL, '<p style=\"text-align: center;\">H&agrave;nh tr&igrave;nh 6 năm ph&aacute;t triển kh&ocirc;ng phải l&agrave; qu&aacute; d&agrave;i nhưng đủ để cho GCO Group tạo dựng cho m&igrave;nh nền tảng&nbsp;<br />nhất định trong lĩnh vực hoạt động. Với đội ngũ hơn 100 nh&acirc;n sự trẻ, năng động.</p>\r\n<p>&nbsp;</p>', NULL, '<p>C&ocirc;ng ty Cổ phần C&ocirc;ng nghệ v&agrave; Truyền th&ocirc;ng GCO &ndash; GCO Group (tiền th&acirc;n l&agrave; C&ocirc;ng ty Cổ phần C&ocirc;ng nghệ Helios Việt Nam) hoạt động trong c&aacute;c lĩnh vực: Digital Marketing, Web Development, E-Learning, Online Media v&agrave; E-Commerce. GCO Group đ&atilde; trải qua 6 năm tr&ecirc;n h&agrave;nh tr&igrave;nh x&acirc;y dựng v&agrave; ph&aacute;t triển, đối mặt v&agrave; vượt qua rất nhiều kh&oacute; khăn từ những ng&agrave;y đầu th&agrave;nh lập. Kh&oacute; khăn cũng l&agrave; cơ hội để GCO Group t&iacute;ch lũy cho m&igrave;nh kinh nghiệm v&agrave; bản lĩnh. Hơn 100 th&agrave;nh vi&ecirc;n GCO Group lu&ocirc;n nỗ lực kh&ocirc;ng ngừng hướng đến mục ti&ecirc;u trở th&agrave;nh c&ocirc;ng ty C&ocirc;ng nghệ v&agrave; Truyền th&ocirc;ng h&agrave;ng đầu cả nước, vươn ra tầm khu vực</p>\r\n<p>H&agrave;nh tr&igrave;nh 6 năm ph&aacute;t triển kh&ocirc;ng phải l&agrave; qu&aacute; d&agrave;i nhưng đủ để cho GCO Group tạo dựng cho m&igrave;nh nền tảng nhất định trong lĩnh vực hoạt động. Với đội ngũ hơn 100 nh&acirc;n sự trẻ, năng động, nhiệt huyết, chuy&ecirc;n nghiệp, GCO Group tự h&agrave;o trở th&agrave;nh người bạn đồng h&agrave;nh tin cậy của hơn 1000 đối t&aacute;c với hơn 500 kh&aacute;ch h&agrave;ng thường xuy&ecirc;n. Dịch vụ chuy&ecirc;n nghiệp, nh&acirc;n sự tận t&acirc;m, quy tr&igrave;nh l&agrave;m việc b&agrave;i bản, hỗ trợ thường xuy&ecirc;n, GCO Group tự tin mang đến những giải ph&aacute;p hiệu quả phục vụ lợi &iacute;ch kh&aacute;ch h&agrave;ng.</p>', 1, 'gioi thieu', 'gioi thieu, thieu gioi', 'gioi thieu về công ty', NULL, '2017-10-10 02:27:52', '2017-10-09 19:27:52');
 
 -- --------------------------------------------------------
 
@@ -176,8 +176,8 @@ CREATE TABLE `bills` (
 --
 
 INSERT INTO `bills` (`id`, `full_name`, `email`, `phone`, `address`, `province`, `district`, `note`, `status`, `total`, `detail`, `created_at`, `updated_at`, `card_code`, `payment`) VALUES
-(5, 'Nguyen thi B', 'chuong1194@yahoo.com', '09983292', 'Cầu Diễn, Từ Liêm, Hà Nội', NULL, NULL, 'dfgdg', 1, 9000000, '[{\"product_name\":\"\\u0110\\u00e8n tr\\u1ea7n 1\",\"product_numb\":\"3\",\"product_price\":3000000,\"product_img\":\"1507018535_shop-item-3.jpg\",\"product_code\":null}]', '2017-10-04 01:46:30', '2017-10-03 18:46:30', NULL, 1),
-(6, 'Hoàng Hồng Chương', 'admin@team.vn', '09983292', 'Cầu Diễn, Từ Liêm, Hà Nội', NULL, NULL, 'fsfd', 0, 20888888, '[{\"product_name\":\"N\\u01b0\\u1edbc hoa Ph\\u00e1p\",\"product_numb\":\"4\",\"product_price\":2222222,\"product_img\":\"1507178993_shop-item-5.jpg\",\"product_code\":\"4JG4JN\"},{\"product_name\":\"N\\u01b0\\u1edbc hoa \\u0111\\u1eb7c bi\\u1ec7t\",\"product_numb\":\"4\",\"product_price\":3000000,\"product_img\":\"1507018577_shop-item-2.jpg\",\"product_code\":null}]', '2017-10-04 21:50:33', '2017-10-04 21:50:33', NULL, 1);
+(9, 'Hoàng Hồng Chương', 'chuong1194@yahoo.com', '0987654321', 'Cầu Diễn, Từ Liêm, Hà Nội', NULL, NULL, 'fgh', 0, 120000, '[{\"product_name\":\"S\\u1ea3n ph\\u1ea9m demo1\",\"product_numb\":\"3\",\"product_price\":40000,\"product_img\":\"1507600938_sp13.png\",\"product_code\":null}]', '2017-10-11 02:47:19', '2017-10-11 02:47:19', NULL, 0),
+(10, 'Trần Văn A', 'a@gmail.com', '0987654321', 'Cầu Diễn, Từ Liêm, Hà Nội', NULL, NULL, 'fdgdf', 0, 210000, '[{\"product_name\":\"M\\u0103ng c\\u1ee5t\",\"product_numb\":\"3\",\"product_price\":50000,\"product_img\":\"1507600878_sp5.png\",\"product_code\":null},{\"product_name\":\"S\\u1ea3n ph\\u1ea9m demo 5\",\"product_numb\":\"3\",\"product_price\":20000,\"product_img\":\"1507601052_sp16.png\",\"product_code\":null}]', '2017-10-11 03:59:08', '2017-10-11 03:59:08', NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -307,8 +307,7 @@ CREATE TABLE `contacts` (
 --
 
 INSERT INTO `contacts` (`id`, `name`, `address`, `email`, `phone`, `content`, `status`, `created_at`, `updated_at`) VALUES
-(3, 'Hoàng Hồng Chương', 'Hà Nội', 'admin@team.vn', NULL, 'dsfsd', 0, '2017-10-05 02:01:04', '2017-10-05 02:02:18'),
-(4, 'Du lịch miền bắc', 'Hà Nội', 'chuong1194@yahoo.com', NULL, NULL, 0, '2017-10-05 23:39:09', '2017-10-05 23:39:51');
+(5, 'Hoàng Hồng Chương', NULL, 'chuong1194@yahoo.com', NULL, 'jhk', 0, '2017-10-08 20:59:51', '2017-10-08 20:59:58');
 
 -- --------------------------------------------------------
 
@@ -395,9 +394,8 @@ INSERT INTO `images` (`id`, `product_id`, `name`, `alias`, `photo`, `status`, `i
 (12, 3, NULL, NULL, '1506054442_cart-3.png', 1, NULL, NULL, 0, '2017-09-22 04:27:22', '2017-09-22 04:27:22'),
 (9, 4, NULL, NULL, '1505958574_hand-2.png', 1, NULL, NULL, 0, '2017-09-21 01:49:34', '2017-09-21 01:49:34'),
 (10, 4, NULL, NULL, '1505958574_hand-3.png', 1, NULL, NULL, 0, '2017-09-21 01:49:34', '2017-09-21 01:49:34'),
-(15, 6, NULL, NULL, '1506390151_3-0.png', 1, NULL, NULL, 0, '2017-09-26 01:42:31', '2017-09-26 01:42:31'),
-(16, 6, NULL, NULL, '1506390151_3-1.png', 1, NULL, NULL, 0, '2017-09-26 01:42:31', '2017-09-26 01:42:31'),
-(17, 6, NULL, NULL, '1506390151_3-2.png', 1, NULL, NULL, 0, '2017-09-26 01:42:31', '2017-09-26 01:42:31'),
+(48, 6, NULL, NULL, '1507610330_sli.png', 1, NULL, NULL, 0, '2017-10-10 04:38:50', '2017-10-10 04:38:50'),
+(49, 6, NULL, NULL, '1507610330_sli-thumb1.png', 1, NULL, NULL, 0, '2017-10-10 04:38:50', '2017-10-10 04:38:50'),
 (34, 2, NULL, NULL, '1507018535_shop-item-2.jpg', 1, NULL, NULL, 0, '2017-10-03 08:15:35', '2017-10-03 08:15:35'),
 (35, 2, NULL, NULL, '1507018535_shop-item-6.jpg', 1, NULL, NULL, 0, '2017-10-03 08:15:35', '2017-10-03 08:15:35'),
 (22, 1, NULL, NULL, '1507015682_shop-item-3.jpg', 1, NULL, NULL, 0, '2017-10-03 07:28:02', '2017-10-03 07:28:02'),
@@ -416,12 +414,12 @@ INSERT INTO `images` (`id`, `product_id`, `name`, `alias`, `photo`, `status`, `i
 (37, 13, NULL, NULL, '1507020071_shop-item-3.jpg', 1, NULL, NULL, 0, '2017-10-03 08:41:11', '2017-10-03 08:41:11'),
 (38, 13, NULL, NULL, '1507020071_shop-item-4.jpg', 1, NULL, NULL, 0, '2017-10-03 08:41:11', '2017-10-03 08:41:11'),
 (39, 13, NULL, NULL, '1507020071_shop-item-8.jpg', 1, NULL, NULL, 0, '2017-10-03 08:41:11', '2017-10-03 08:41:11'),
-(40, 5, NULL, NULL, '1507089709_shop-item-6.jpg', 1, NULL, NULL, 0, '2017-10-04 04:01:49', '2017-10-04 04:01:49'),
-(41, 5, NULL, NULL, '1507089709_shop-item-7.jpg', 1, NULL, NULL, 0, '2017-10-04 04:01:49', '2017-10-04 04:01:49'),
-(42, 5, NULL, NULL, '1507089709_shop-item-8.jpg', 1, NULL, NULL, 0, '2017-10-04 04:01:49', '2017-10-04 04:01:49'),
+(46, 5, NULL, NULL, '1507609961_sli-thumb1.png', 1, NULL, NULL, 0, '2017-10-10 04:32:41', '2017-10-10 04:32:41'),
+(47, 5, NULL, NULL, '1507609961_sli-thumb2.png', 1, NULL, NULL, 0, '2017-10-10 04:32:41', '2017-10-10 04:32:41'),
 (43, 12, NULL, NULL, '1507101461_shop-item-2.jpg', 1, NULL, NULL, 0, '2017-10-04 07:17:41', '2017-10-04 07:17:41'),
 (44, 12, NULL, NULL, '1507101461_shop-item-3.jpg', 1, NULL, NULL, 0, '2017-10-04 07:17:41', '2017-10-04 07:17:41'),
-(45, 12, NULL, NULL, '1507101461_shop-item-8.jpg', 1, NULL, NULL, 0, '2017-10-04 07:17:41', '2017-10-04 07:17:41');
+(45, 12, NULL, NULL, '1507101461_shop-item-8.jpg', 1, NULL, NULL, 0, '2017-10-04 07:17:41', '2017-10-04 07:17:41'),
+(51, 6, NULL, NULL, '1507610445_nho.png', 1, NULL, NULL, 0, '2017-10-10 04:40:45', '2017-10-10 04:40:45');
 
 -- --------------------------------------------------------
 
@@ -574,12 +572,12 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`id`, `cate_id`, `user_id`, `name`, `alias`, `photo`, `background`, `mota`, `content`, `status`, `noibat`, `title`, `keyword`, `description`, `com`, `type`, `stt`, `created_at`, `updated_at`) VALUES
-(11, 0, 5, 'Tin tức 2', 'tin-tuc-2', '1507197130_5-7.jpg', '', 'Áo sơ mi caro Hàn Quốc làm điên đảo giới trẻ trong những mùa thời trang gần đây tiếp tục sức nóng trong năm 2015 với những sắc mù mới.', NULL, 1, 0, NULL, NULL, NULL, 'tin-tuc', 0, 4, '2017-10-05 02:52:10', '2017-10-05 02:52:10'),
-(12, 0, 5, 'Tin tức 3', 'tin-tuc-3', '1507197148_5-8.jpg', '', 'Áo sơ mi caro Hàn Quốc làm điên đảo giới trẻ trong những mùa thời trang gần đây tiếp tục sức nóng trong năm 2015 với những sắc mù mới.', NULL, 1, 0, NULL, NULL, NULL, 'tin-tuc', 0, 5, '2017-10-05 02:52:28', '2017-10-05 02:52:28'),
-(13, 0, 5, 'Tin tức 4', 'tin-tuc-4', '1507197168_5-4.jpg', '', 'Áo sơ mi caro Hàn Quốc làm điên đảo giới trẻ trong những mùa thời trang gần đây tiếp tục sức nóng trong năm 2015 với những sắc mù mới.', NULL, 1, 0, NULL, NULL, NULL, 'tin-tuc', 0, 6, '2017-10-05 02:52:48', '2017-10-05 02:52:48'),
-(14, 0, 5, 'Tin tức 5', 'tin-tuc-5', '1507197184_5-5.jpg', '', 'Áo sơ mi caro Hàn Quốc làm điên đảo giới trẻ trong những mùa thời trang gần đây tiếp tục sức nóng trong năm 2015 với những sắc mù mới.', NULL, 1, 0, NULL, NULL, NULL, 'tin-tuc', 0, 7, '2017-10-05 02:53:04', '2017-10-05 02:53:04'),
-(15, 0, 5, 'Tin tức 6', 'tin-tuc-6', '1507197614_5-2.jpg', '', 'Áo sơ mi caro Hàn Quốc làm điên đảo giới trẻ trong những mùa thời trang gần đây tiếp tục sức nóng trong năm 2015 với những sắc mù mới.', NULL, 1, 0, NULL, NULL, NULL, 'tin-tuc', 0, 8, '2017-10-05 03:00:14', '2017-10-05 03:00:14'),
-(10, 0, 5, 'Tin tức 1', 'tin-tuc-1', '1507197106_5-6.jpg', '', 'Áo sơ mi caro Hàn Quốc làm điên đảo giới trẻ trong những mùa thời trang gần đây tiếp tục sức nóng trong năm 2015 với những sắc mù mới.', NULL, 1, 0, NULL, NULL, NULL, 'tin-tuc', 0, 3, '2017-10-05 02:51:46', '2017-10-05 02:51:46'),
+(11, 0, 5, 'Tin tức 2', 'tin-tuc-2', '1507522594_new1.png', '', 'Áo sơ mi caro Hàn Quốc làm điên đảo giới trẻ trong những mùa thời trang gần đây tiếp tục sức nóng trong năm 2015 với những sắc mù mới.', NULL, 1, 0, NULL, NULL, NULL, 'tin-tuc', 0, 4, '2017-10-09 04:16:34', '2017-10-08 21:16:34'),
+(12, 0, 5, 'Tin tức 3', 'tin-tuc-3', '1507522614_new2.png', '', 'Áo sơ mi caro Hàn Quốc làm điên đảo giới trẻ trong những mùa thời trang gần đây tiếp tục sức nóng trong năm 2015 với những sắc mù mới.', NULL, 1, 0, NULL, NULL, NULL, 'tin-tuc', 0, 5, '2017-10-09 04:16:54', '2017-10-08 21:16:54'),
+(13, 0, 5, 'Tin tức 4', 'tin-tuc-4', '1507522624_new3.png', '', 'Áo sơ mi caro Hàn Quốc làm điên đảo giới trẻ trong những mùa thời trang gần đây tiếp tục sức nóng trong năm 2015 với những sắc mù mới.', NULL, 1, 0, NULL, NULL, NULL, 'tin-tuc', 0, 6, '2017-10-09 04:17:04', '2017-10-08 21:17:04'),
+(14, 0, 5, 'Tin tức 5', 'tin-tuc-5', '1507522634_new4.png', '', 'Áo sơ mi caro Hàn Quốc làm điên đảo giới trẻ trong những mùa thời trang gần đây tiếp tục sức nóng trong năm 2015 với những sắc mù mới.', NULL, 1, 0, NULL, NULL, NULL, 'tin-tuc', 0, 7, '2017-10-09 04:17:14', '2017-10-08 21:17:14'),
+(15, 0, 5, 'Tin tức 6', 'tin-tuc-6', '1507522649_new5.png', '', 'Áo sơ mi caro Hàn Quốc làm điên đảo giới trẻ trong những mùa thời trang gần đây tiếp tục sức nóng trong năm 2015 với những sắc mù mới.', NULL, 1, 0, NULL, NULL, NULL, 'tin-tuc', 0, 8, '2017-10-09 04:17:29', '2017-10-08 21:17:29'),
+(10, 0, 5, 'Tin tức 1', 'tin-tuc-1', '1507522672_news2.png', '', 'Sáng 23 -09 như thường lệ, chị Lê Thị Phúc (ngụ tại phố Hồng Mai, quận Hai Bà Trưng) ra chợ mua thức ăn. Khi qua hàng rau xanh, chị Phúc rất bất ngờ khi', '<p style=\"text-align: center;\"><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"http://localhost/vegetable/upload/news-detail.png\" alt=\"\" width=\"783\" height=\"552\" /></p>\r\n<p>S&aacute;ng 23.9, như thường lệ, chị L&ecirc; Thị Ph&uacute;c (ngụ tại phố Hồng Mai, quận Hai B&agrave; Trưng) ra chợ mua thức ăn. Khi qua h&agrave;ng rau xanh, chị Ph&uacute;c rất bất ngờ khi v&agrave;o giờ n&agrave;y mọi ng&agrave;y sạp vẫn đầy ắp rau, củ, quả nhưng h&ocirc;m nay chỉ c&ograve;n l&egrave;o t&egrave;o v&agrave;i thứ. &ldquo;Mấy ng&agrave;y qua, gi&aacute; rau c&oacute; nh&iacute;ch l&ecirc;n đ&ocirc;i ch&uacute;t, nhưng kh&ocirc;ng đến mức khan hiếm như h&ocirc;m nay. Ra chợ muộn th&igrave; chỉ c&ograve;n c&agrave; chua, khoai t&acirc;y, b&iacute; xanh&hellip; C&aacute;c loại rau ăn l&aacute; như rau muống, m&ugrave;ng tơi đều hết sớm&rdquo;, chị Ph&uacute;c n&oacute;i.</p>\r\n<p>Khảo s&aacute;t của ph&oacute;ng vi&ecirc;n tại c&aacute;c chợ d&acirc;n sinh như: chợ Quỳnh Mai, chợ B&aacute;ch Khoa (quận Hai B&agrave; Trưng), chợ Khương Thượng v&agrave; chợ Vĩnh Hồ (quận Đống Đa), chợ Thanh Xu&acirc;n (quận Thanh Xu&acirc;n)..., lượng rau xanh về chợ kh&ocirc;ng dồi d&agrave;o như trước, gi&aacute; rau tăng 30 - 50% so với c&aacute;ch đ&acirc;y 1 tuần.</p>\r\n<p>Tại chợ Quỳnh Mai, gi&aacute; một số loại rau ăn l&aacute; như m&ugrave;ng tơi, rau dền, rau đay, cải xanh tăng gấp 3 lần, từ 4.000 - 5.000 đồng/mớ l&ecirc;n 12.000 - 15.000 đồng/mớ. Gi&aacute; rau muống tăng gần gấp đ&ocirc;i, từ 7.000 - 8.000 đồng/mớ l&ecirc;n 12.000 - 15.000 đồng/mớ; c&agrave; chua tăng 5.000 đồng, từ 25.000 đồng/kg l&ecirc;n 30.000 đồng/kg; mướp đắng tăng 15.000 đồng/kg.</p>\r\n<p>Một số loại rau gia vị như t&iacute;a t&ocirc;, tăng từ 2.000 đồng l&ecirc;n 5.000 đồng/mớ; kinh giới 5.000 đồng/mớ, tăng 3.000 đồng/mớ. Anh Phan Văn Học, người chuy&ecirc;n cung cấp rau của HTX rau xanh V&acirc;n Nội (huyện Đ&ocirc;ng Anh, H&agrave; Nội) cho biết: &ldquo;Lượng rau thu hoạch kh&ocirc;ng nhiều n&ecirc;n t&ocirc;i ưu ti&ecirc;n giao h&agrave;ng cho nh&agrave; h&agrave;ng, qu&aacute;n ăn v&agrave; trường học, c&ograve;n lại mới đổ về chợ. Do khan hiếm rau xanh, cộng với t&acirc;m l&yacute; t&iacute;ch trữ lương thực trước đợt mưa b&atilde;o n&ecirc;n gi&aacute; rau ng&agrave;y 25.7 tăng đột biến&rdquo;.</p>', 1, 0, NULL, NULL, NULL, 'tin-tuc', 0, 3, '2017-10-10 06:44:47', '2017-10-09 23:44:47'),
 (9, 0, 5, 'FH - Cùng các bạn gái Sài Thành xuống phố những ngày hè nắng nóng.', 'fh-cung-cac-ban-gai-sai-thanh-xuong-pho-nhung-ngay-he-nang-nong', '1507196489_1-12_02.jpg', '', 'Áo sơ mi caro Hàn Quốc làm điên đảo giới trẻ trong những mùa thời trang gần đây tiếp tục sức nóng trong năm 2015 với những sắc màu mới.', NULL, 1, 1, NULL, NULL, NULL, 'tin-tuc', 0, 2, '2017-10-06 02:16:07', '2017-10-05 19:16:07'),
 (8, 0, 5, 'Những mẫu áo thời trang luôn được giới trẻ yêu thích nhất hiện nay.', 'nhung-mau-ao-thoi-trang-luon-duoc-gioi-tre-yeu-thich-nhat-hien-nay', '1507196462_1-11.jpg', '', 'Áo sơ mi caro Hàn Quốc làm điên đảo giới trẻ trong những mùa thời trang gần đây tiếp tục sức nóng trong năm 2015 với những sắc mù mới.', NULL, 1, 1, NULL, NULL, NULL, 'tin-tuc', 0, 1, '2017-10-06 02:16:20', '2017-10-05 19:16:20');
 
@@ -613,7 +611,7 @@ CREATE TABLE `newsletter` (
 
 INSERT INTO `newsletter` (`id`, `user_id`, `name`, `link`, `email`, `phone`, `photo`, `mota`, `content`, `status`, `noibat`, `com`, `stt`, `created_at`, `updated_at`) VALUES
 (37, 5, NULL, NULL, 'duydoan.nina@gmail.com', NULL, '', NULL, NULL, 1, 0, 'newsletter', 1, '2017-09-01 02:50:14', '2017-08-31 19:50:14'),
-(38, 5, NULL, NULL, 'nguyennhan091@gmail.com', NULL, '', NULL, NULL, 1, 0, 'newsletter', 2, '2017-08-31 19:51:32', '2017-08-31 19:51:32'),
+(44, 0, NULL, NULL, 'support@gco.vn', NULL, NULL, NULL, NULL, 1, 0, 'newsletter', 0, '2017-10-09 18:22:59', '2017-10-09 18:22:59'),
 (40, 0, NULL, NULL, 'info@shoesshop.com', NULL, NULL, NULL, NULL, 1, 0, 'newsletter', 0, '2017-09-06 02:48:56', '2017-09-06 02:48:56'),
 (42, 0, 'Hoàng Hồng Chương', NULL, 'chuonghoanghong@gmail.com', '0987654321', NULL, NULL, 'sdf', 1, 0, 'newsletter', 0, '2017-09-15 00:56:36', '2017-09-15 00:56:36'),
 (43, 0, 'Nguyễn Văn A', NULL, 'a@gmail.com', '09392929', NULL, NULL, 'sfdsdf', 1, 0, 'newsletter', 0, '2017-09-15 19:48:18', '2017-09-15 19:48:18');
@@ -814,6 +812,7 @@ CREATE TABLE `products` (
   `quatang` text COLLATE utf8_unicode_ci,
   `huongdan` text COLLATE utf8_unicode_ci,
   `vanchuyen` text COLLATE utf8_unicode_ci,
+  `xuatxu` varchar(250) CHARACTER SET utf8 DEFAULT NULL,
   `noibat` int(11) NOT NULL DEFAULT '0',
   `spbc` int(11) NOT NULL DEFAULT '0',
   `status` int(11) NOT NULL DEFAULT '1',
@@ -828,20 +827,19 @@ CREATE TABLE `products` (
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`id`, `user_id`, `cate_id`, `thuonghieu_id`, `code`, `stt`, `name`, `alias`, `photo`, `price`, `sale`, `price_old`, `mota`, `content`, `thuonghieu`, `tinhtrang`, `baohanh`, `model`, `namsanxuat`, `quatang`, `huongdan`, `vanchuyen`, `noibat`, `spbc`, `status`, `title`, `keyword`, `description`, `created_at`, `updated_at`) VALUES
-(1, 5, 1, 4, NULL, 1, 'Natural Glam', 'natural-glam', '1507257618_1-2.jpg', 1000000, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 1, NULL, NULL, NULL, '2017-10-06 02:40:18', '2017-10-05 19:40:18'),
-(2, 5, 1, NULL, NULL, 2, 'Melissaa Lace Ruffle Dressa', 'melissaa-lace-ruffle-dressa', '1507257625_1-3.jpg', 3000000, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 1, NULL, NULL, NULL, '2017-10-06 08:46:50', '2017-10-06 01:46:50'),
-(3, 5, 1, NULL, NULL, 3, 'Melissa Lace Rufflee Dress', 'melissa-lace-rufflee-dress', '1507257631_1-4.jpg', 5000000, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 1, NULL, NULL, NULL, '2017-10-06 08:47:07', '2017-10-06 01:47:07'),
-(4, 5, 2, NULL, NULL, 4, 'Trang phục trẻ trung', 'trang-phuc-tre-trung', '1507257638_1-5.jpg', 3000000, 0, 0, NULL, '<p>sdf sdfs&nbsp;</p>\r\n<p>sdf s</p>', NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 1, NULL, NULL, NULL, '2017-10-06 08:47:21', '2017-10-06 01:47:21'),
-(5, 5, 2, NULL, NULL, 5, 'Melissa Lacese Ruffle Dress', 'melissa-lacese-ruffle-dress', '1507257645_1-6_02.jpg', 2000000, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 1, NULL, NULL, NULL, '2017-10-06 08:47:37', '2017-10-06 01:47:37'),
-(6, 5, 2, NULL, '4JG4JN', 6, 'Melissa Lace Ruffle Dressn', 'melissa-lace-ruffle-dressn', '1507257658_1-8.jpg', 1000000, 0, 0, '<p>Thương hiệu: Sylcom</p>\r\n<p>K&iacute;ch thước (mm): 840 x H min 660/ max 1200</p>\r\n<p>M&agrave;u: Gold</p>\r\n<p>Chất liệu: Metal, glass</p>\r\n<p>Loại b&oacute;ng: E14/max 40W</p>\r\n<p>Số lượng b&oacute;ng: 7</p>', '<p>Đ&egrave;n ch&ugrave;m trang tr&iacute; tạo kh&ocirc;ng gian ph&ograve;ng kh&aacute;ch ấm c&uacute;ng v&agrave; sang trọng</p>\r\n<p>nh s&aacute;ng của đ&egrave;n ch&ugrave;m ph&ograve;ng kh&aacute;ch cực kỳ quan trọng trong việc trang tr&iacute; nội thất căn ph&ograve;ng. Ngo&agrave;i những c&ocirc;ng năng trang tr&iacute; chiếu s&aacute;ng th&ocirc;ng thường ch&uacute;ng c&ograve;n g&oacute;p phần t&ocirc;n l&ecirc;n vẻ đẹp sang trọng, ấm c&uacute;ng cho căn ph&ograve;ng kh&aacute;ch của bạn.</p>\r\n<p>Để tạo ra một ko gian ấm &aacute;p với &aacute;nh nguồn &aacute;nh s&aacute;ng dịu nhẹ, lan tỏa bạn cần treo một chiếc đ&egrave;n ch&ugrave;m trang tr&iacute; đảm bảo cường độ &aacute;nh s&aacute;ng vừa phải, nguồn &aacute;nh s&aacute;ng t&ocirc;ng v&agrave;ng sẽ mang lại một cảm gi&aacute;c ấm &aacute;p cho căn ph&ograve;ng v&agrave; đỡ tr&oacute;i mắt . Ngo&agrave;i ra treo một đ&egrave;n ch&ugrave;m pha l&ecirc; lớn tr&ecirc;n trần của ph&ograve;ng ăn cũng rất tốt v&igrave; n&oacute; tượng trưng cho năng lượng dương, rất tốt cho c&aacute;c bữa ăn.</p>\r\n<p>Lựa chọn đ&egrave;n trang tr&iacute; ph&ugrave; hợp cho ph&ograve;ng kh&aacute;ch Đ&egrave;n ch&ugrave;m ph&ograve;ng kh&aacute;ch phải tạo được cho căn ph&ograve;ng kh&ocirc;ng gian ấm c&uacute;ng v&agrave; sang trọng. C&oacute; thể bố tr&iacute; cho ph&ograve;ng kh&aacute;ch những ngọn đ&egrave;n ch&ugrave;m đẹp lấp l&aacute;nh sẽ l&agrave;m cho ph&ograve;ng kh&aacute;ch th&ecirc;m lung linh</p>\r\n<p>C&oacute; rất nhiều loại đ&egrave;n trang tr&iacute; nội thất như đ&egrave;n ch&ugrave;m, đ&egrave;n trần, đ&egrave;n b&agrave;n, ... mỗi loại c&oacute; một ưu điểm v&agrave; c&aacute;ch b&agrave;i tr&iacute; xắp đặt ri&ecirc;ng, v&igrave; k&iacute;ch cỡ mỗi loại kh&aacute;c nhau n&ecirc;n cần phải lụa chọn cho ph&ugrave; hợp với từng kh&ocirc;ng gian</p>\r\n<p>Ch&iacute;nh v&igrave; vậy m&agrave; treo đ&egrave;n ch&ugrave;m trang tr&iacute; ph&ograve;ng kh&aacute;ch cần phải hiểu r&otilde; chức năng, biết lựa chọn đ&egrave;n c&oacute; k&iacute;ch thước ph&ugrave; hợp, ngo&agrave;i việc bạn cần hiểu về đặc điểm từng loại ra th&igrave; đ&egrave;n c&ograve;n phải gắn với kh&ocirc;ng gian kiến tr&uacute;c v&agrave; nội thất.</p>', NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 1, NULL, NULL, NULL, '2017-10-06 08:47:47', '2017-10-06 01:47:47'),
-(7, 5, 2, NULL, NULL, 7, 'Melissa Lace Rufflse Dress', 'melissa-lace-rufflse-dress', '1507257722_2-1.jpg', 1000000, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 1, NULL, NULL, NULL, '2017-10-06 08:46:02', '2017-10-06 01:46:02'),
-(12, 5, 2, 2, 'sf6', 10, 'Gift Set Gucci Bamboo Pour Femme', 'gift-set-gucci-bamboo-pour-femme', '1507257732_3-3.jpg', 8000000, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 1, NULL, NULL, NULL, '2017-10-06 02:42:12', '2017-10-05 19:42:12'),
-(9, 5, 3, NULL, NULL, 9, 'Melissa Lace Ruffle Dresss', 'melissa-lace-ruffle-dresss', '1507257741_3-8.jpg', 3000000, 0, 0, '<h3>Đầm xo&egrave; vintage phối dập ly cổ sơ mi c&aacute;ch điệu</h3>\r\n<ul class=\"pdetail-list\">\r\n<li>Chất liệu : chinfon c&oacute; l&oacute;t</li>\r\n<li>M&agrave;u : đỏ đ&ocirc; v&agrave; cafe sữa</li>\r\n<li>K&iacute;ch thước : M : ngực 86 - 88 , eo : 68, d&agrave;i : 1m2</li>\r\n<li>L : ngực 90 cm, eo : 72 cm, d&agrave;i 1m2</li>\r\n<li>XL: ngực 92- 94 cm, eo: 74-76 cm, d&agrave;i : 1m2</li>\r\n</ul>', '<h2><strong>Đặc điểm nổi bật:</strong></h2>\r\n<p><strong>M&agrave;u sắc v&agrave; cung mệnh:</strong></p>\r\n<p><strong><em>Mệnh cung C&agrave;n, Đo&agrave;i, thuộc h&agrave;nh Kim</em></strong></p>\r\n<p>- M&agrave;u sắc hợp: M&agrave;u v&agrave;ng, n&acirc;u, thuộc h&agrave;nh Thổ (tương sinh, tốt)</p>\r\n<p>- M&agrave;u trắng, bạc, kem, thuộc h&agrave;nh Kim (tương vượng, tốt)</p>\r\n<p>- M&agrave;u sắc kỵ: M&agrave;u đỏ, m&agrave;u hồng, m&agrave;u cam, m&agrave;u t&iacute;m, thuộc h&agrave;nh Hỏa , khắc ph&aacute; mệnh cung h&agrave;nh Kim, xấu</p>\r\n<p><strong><em>Mệnh cung Cấn, Kh&ocirc;n, thuộc h&agrave;nh Thổ</em></strong></p>\r\n<p>- M&agrave;u sắc hợp: M&agrave;u đỏ, hồng, cam, t&iacute;m, thuộc h&agrave;nh Hỏa (tương sinh, tốt)</p>\r\n<p>- M&agrave;u v&agrave;ng, n&acirc;u, thuộc h&agrave;nh Thổ (tương vượng, tốt).</p>\r\n<p>- M&agrave;u sắc kỵ: Xanh lục, xanh da trời thuộc h&agrave;nh Mộc , khắc ph&aacute; mệnh cung h&agrave;nh Thổ, xấu</p>', NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 1, NULL, NULL, NULL, '2017-10-06 08:46:13', '2017-10-06 01:46:13'),
-(10, 5, 3, NULL, NULL, 10, 'Melissa Lace Ruffle Dress', 'melissa-lace-ruffle-dress', '1507257671_1-6_02.jpg', 1400000, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 1, NULL, NULL, NULL, '2017-10-06 08:45:44', '2017-10-06 01:45:44'),
-(13, 5, 2, NULL, '4JG4JN', 11, 'Melissa Lace Ruffle Dressx', 'melissa-lace-ruffle-dressx', '1507257690_1-9.jpg', 9000000, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 1, NULL, NULL, NULL, '2017-10-06 08:48:03', '2017-10-06 01:48:03'),
-(14, 5, 2, NULL, '4JG4JN', 12, 'Melissa Lace Ruffle Dressm', 'melissa-lace-ruffle-dressm', '1507257699_1-10.jpg', 2222222, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 1, NULL, NULL, NULL, '2017-10-06 08:48:13', '2017-10-06 01:48:13'),
-(15, 5, 1, NULL, NULL, 13, 'Trang phục công sở', 'trang-phuc-cong-so', '1507279731_3-5.jpg', 9999000, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 1, NULL, NULL, NULL, '2017-10-06 01:48:51', '2017-10-06 01:48:51');
+INSERT INTO `products` (`id`, `user_id`, `cate_id`, `thuonghieu_id`, `code`, `stt`, `name`, `alias`, `photo`, `price`, `sale`, `price_old`, `mota`, `content`, `thuonghieu`, `tinhtrang`, `baohanh`, `model`, `namsanxuat`, `quatang`, `huongdan`, `vanchuyen`, `xuatxu`, `noibat`, `spbc`, `status`, `title`, `keyword`, `description`, `created_at`, `updated_at`) VALUES
+(1, 5, 7, NULL, NULL, 1, 'Cam Hà Giang', 'cam-ha-giang', '1507600734_sp1.png', 60000, 0, 70000, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, 'Việt  Nam', 1, 0, 1, NULL, NULL, NULL, '2017-10-10 10:04:41', '2017-10-10 03:04:41'),
+(2, 5, 7, NULL, NULL, 2, 'Táo tàu', 'tao-tau', '1507600772_sp2.png', 50000, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 1, NULL, NULL, NULL, '2017-10-10 10:04:39', '2017-10-10 03:04:39'),
+(3, 5, 7, NULL, NULL, 3, 'Dâu tây', 'dau-tay', '1507600807_sp3.png', 80000, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 1, NULL, NULL, NULL, '2017-10-10 10:29:32', '2017-10-10 03:29:32'),
+(4, 5, 7, NULL, NULL, 4, 'Bưởi năm roi', 'buoi-nam-roi', '1507600852_sp4.png', 60000, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 1, NULL, NULL, NULL, '2017-10-10 10:07:52', '2017-10-10 03:07:52'),
+(5, 5, 7, NULL, NULL, 5, 'Măng cụt', 'mang-cut', '1507600878_sp5.png', 50000, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 1, NULL, NULL, NULL, '2017-10-09 19:01:18', '2017-10-09 19:01:18'),
+(6, 5, 4, NULL, NULL, 6, 'Sản phẩm demo1', 'san-pham-demo1', '1507600938_sp13.png', 40000, 0, 0, NULL, '<p class=\"italic\">Lưu &yacute;: Bảo quản nơi kh&ocirc; tho&aacute;ng</p>\r\n<p><span class=\"bold\">Gi&aacute; trị dinh dưỡng :</span>&nbsp;100 g</p>\r\n<p><span class=\"bold\">Calo (kcal):</span>&nbsp;52</p>\r\n<p><span class=\"bold\">Lipid :</span>&nbsp;0,2 g</p>\r\n<p><span class=\"bold\">Cholesterol:</span>&nbsp;0 mg</p>', NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 1, NULL, NULL, NULL, '2017-10-11 03:34:22', '2017-10-11 03:34:22'),
+(7, 5, 4, NULL, NULL, 7, 'Sản phẩm demo 2', 'san-pham-demo-2', '1507600957_sp11.png', 30000, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 1, NULL, NULL, NULL, '2017-10-10 10:07:55', '2017-10-10 03:07:55'),
+(8, 5, 7, NULL, NULL, 8, 'Sản phẩm demo 3', 'san-pham-demo-3', '1507600999_sp17.png', 35000, 0, 70000, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 1, NULL, NULL, NULL, '2017-10-10 04:25:31', '2017-10-09 21:25:31'),
+(9, 5, 5, NULL, NULL, 9, 'Sản phẩm demo 4', 'san-pham-demo-4', '1507601032_sp12.png', 66666, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 1, NULL, NULL, NULL, '2017-10-11 03:34:33', '2017-10-11 03:34:33'),
+(10, 5, 6, NULL, NULL, 10, 'Sản phẩm demo 5', 'san-pham-demo-5', '1507601052_sp16.png', 20000, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 1, NULL, NULL, NULL, '2017-10-11 03:34:49', '2017-10-11 03:34:49'),
+(11, 5, 6, NULL, NULL, 11, 'Sản phẩm demo 6', 'san-pham-demo-6', '1507601075_sp10.png', 50000, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 1, NULL, NULL, NULL, '2017-10-09 19:04:35', '2017-10-09 19:04:35'),
+(12, 5, 5, NULL, NULL, 12, 'Sản phẩm demo 11', 'san-pham-demo-11', '1507601113_sp14.png', 50000, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 1, NULL, NULL, NULL, '2017-10-09 19:05:13', '2017-10-09 19:05:13');
 
 -- --------------------------------------------------------
 
@@ -859,6 +857,7 @@ CREATE TABLE `product_categories` (
   `status` int(11) NOT NULL,
   `lever` int(11) NOT NULL DEFAULT '0',
   `title` text COLLATE utf8_unicode_ci,
+  `background` text COLLATE utf8_unicode_ci,
   `keyword` longtext COLLATE utf8_unicode_ci,
   `description` longtext COLLATE utf8_unicode_ci,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
@@ -869,10 +868,11 @@ CREATE TABLE `product_categories` (
 -- Dumping data for table `product_categories`
 --
 
-INSERT INTO `product_categories` (`id`, `parent_id`, `stt`, `name`, `alias`, `photo`, `status`, `lever`, `title`, `keyword`, `description`, `created_at`, `updated_at`) VALUES
-(1, 0, 1, 'Đồ thu đông', 'do-thu-dong', '1507258617_1-13.jpg', 1, 0, NULL, NULL, NULL, '2017-10-05 19:56:57', '2017-10-05 19:56:57'),
-(2, 0, 2, 'Đầm dạ hội', 'dam-da-hoi', '1507258643_1-14.jpg', 1, 0, NULL, NULL, NULL, '2017-10-05 19:57:23', '2017-10-05 19:57:23'),
-(3, 0, 3, 'Thu hè 2017 mới', 'thu-he-2017-moi', '1507258668_1-15.jpg', 1, 0, NULL, NULL, NULL, '2017-10-05 19:57:48', '2017-10-05 19:57:48');
+INSERT INTO `product_categories` (`id`, `parent_id`, `stt`, `name`, `alias`, `photo`, `status`, `lever`, `title`, `background`, `keyword`, `description`, `created_at`, `updated_at`) VALUES
+(6, 0, 3, 'Đậu', 'dau', '1507524586_tab4.png', 1, 0, NULL, '1507694242_tab4-x.png', NULL, NULL, '2017-10-11 03:57:22', '2017-10-11 03:57:22'),
+(5, 0, 2, 'Củ', 'cu', '1507524562_tab2.png', 1, 0, NULL, '1507694226_tab2-x.png', NULL, NULL, '2017-10-11 03:57:06', '2017-10-11 03:57:06'),
+(4, 0, 1, 'Rau', 'rau', '1507524547_tab1.png', 1, 0, NULL, '1507694214_tab1-x.png', NULL, NULL, '2017-10-11 03:56:54', '2017-10-11 03:56:54'),
+(7, 0, 4, 'Quả', 'qua', '1507531125_tab5.png', 1, 0, NULL, '1507694200_tab5-x.png', NULL, NULL, '2017-10-11 03:56:40', '2017-10-11 03:56:40');
 
 -- --------------------------------------------------------
 
@@ -965,7 +965,7 @@ CREATE TABLE `setting` (
 --
 
 INSERT INTO `setting` (`id`, `name`, `title`, `company`, `website`, `address`, `phone`, `hotline`, `fax`, `email`, `photo`, `favico`, `title_index`, `mota`, `content`, `facebook`, `twitter`, `google`, `youtube`, `status`, `toado`, `copyright`, `iframemap`, `codechat`, `analytics`, `keyword`, `description`, `created_at`, `updated_at`) VALUES
-(1, 'Fashion house', 'Fashion house', 'Công ty CP Công Nghệ và Truyền thông GCO', 'http://gco.vn/', 'Tầng 8, TOYOTA Thanh Xuân 315 Trường Chinh, Thanh Xuân, Hà Nội', '(04)6 290 8885', '0924 556 345', '(04)3 550 1492', 'support@gco.vn', '1507190313_logo.png', '1507190313_logo.png', NULL, NULL, NULL, 'https://www.facebook.com/FacebookforDevelopers/', 'https://twitter.com/?lang=vi', 'https://plus.google.com/?hl=vi', 'https://www.youtube.com/', 1, NULL, '© GCO 2017. All rights reserved. Design by duydoan.webdesign@gmail.com.', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.761617598985!2d105.82076241501875!3d21.00219068601275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac869cd63f89%3A0xa2e71c273579f51b!2zMzE1IFRyxrDhu51uZyBDaGluaA!5e0!3m2!1sen!2s!4v1505443560797\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', NULL, NULL, NULL, NULL, '2017-10-06 07:09:55', '2017-10-06 00:09:55');
+(1, 'Vegetable', 'Vegetable', 'Công ty CP Công Nghệ và Truyền thông GCO', 'http://gco.vn/', 'Tầng 8, TOYOTA Thanh Xuân 315 Trường Chinh, Thanh Xuân, Hà Nội', '(04)6 290 8885', '0924 556 345', '(04)3 550 1492', 'support@gco.vn', '1507518982_logo.png', '1507518982_logo.png', NULL, NULL, NULL, 'https://www.facebook.com/FacebookforDevelopers/', 'https://twitter.com/?lang=vi', 'https://plus.google.com/?hl=vi', 'https://www.youtube.com/', 1, NULL, '© GCO 2017. All rights reserved. Design by duydoan.webdesign@gmail.com.', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.761617598985!2d105.82076241501875!3d21.00219068601275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac869cd63f89%3A0xa2e71c273579f51b!2zMzE1IFRyxrDhu51uZyBDaGluaA!5e0!3m2!1sen!2s!4v1505443560797\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', NULL, NULL, NULL, NULL, '2017-10-09 07:29:20', '2017-10-09 00:29:20');
 
 -- --------------------------------------------------------
 
@@ -997,6 +997,30 @@ CREATE TABLE `slider` (
 INSERT INTO `slider` (`id`, `user_id`, `name`, `link`, `photo`, `icon`, `mota`, `content`, `status`, `noibat`, `com`, `stt`, `created_at`, `updated_at`) VALUES
 (1, 5, '1', NULL, '1507254459_1-1.jpg', '', NULL, NULL, 1, 0, 'gioi-thieu', 1, '2017-10-06 01:47:39', '2017-10-05 18:47:39'),
 (2, 5, '2', NULL, '1507254556_1-1.jpg', '', NULL, NULL, 1, 0, 'gioi-thieu', 2, '2017-10-06 01:49:16', '2017-10-05 18:49:16');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `slogan`
+--
+
+CREATE TABLE `slogan` (
+  `id` int(11) NOT NULL,
+  `name` varchar(250) DEFAULT NULL,
+  `photo` text,
+  `content` text,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `slogan`
+--
+
+INSERT INTO `slogan` (`id`, `name`, `photo`, `content`, `created_at`, `updated_at`) VALUES
+(1, '100% tự nhiên', '1507605829_gt1.png', '<p style=\"text-align: center;\">H&agrave;nh tr&igrave;nh 6 năm ph&aacute;t&nbsp; triển kh&ocirc;ng phải l&agrave; qu&aacute; d&agrave;i nhưng</p>', '2017-10-10 03:46:14', '2017-10-09 20:46:14'),
+(2, 'Tươi sạch', '1507605946_gt2.png', '<p style=\"text-align: center;\">H&agrave;nh tr&igrave;nh 6 năm ph&aacute;t triển kh&ocirc;ng phải l&agrave; qu&aacute; d&agrave;i nhưng</p>', '2017-10-09 20:25:46', '2017-10-09 20:25:46'),
+(3, 'Chất lượng tốt', '1507605976_gt3.png', '<p style=\"text-align: center;\">H&agrave;nh tr&igrave;nh 6 năm ph&aacute;t triển kh&ocirc;ng phải l&agrave; qu&aacute; d&agrave;i nhưng</p>', '2017-10-09 20:26:16', '2017-10-09 20:26:16');
 
 -- --------------------------------------------------------
 
@@ -1271,6 +1295,12 @@ ALTER TABLE `slider`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `slogan`
+--
+ALTER TABLE `slogan`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `thuonghieu`
 --
 ALTER TABLE `thuonghieu`
@@ -1327,7 +1357,7 @@ ALTER TABLE `banner_position`
 -- AUTO_INCREMENT for table `bills`
 --
 ALTER TABLE `bills`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `campaigns`
@@ -1357,7 +1387,7 @@ ALTER TABLE `contact`
 -- AUTO_INCREMENT for table `contacts`
 --
 ALTER TABLE `contacts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `counter`
@@ -1381,7 +1411,7 @@ ALTER TABLE `footer`
 -- AUTO_INCREMENT for table `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 
 --
 -- AUTO_INCREMENT for table `lienket`
@@ -1405,7 +1435,7 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT for table `newsletter`
 --
 ALTER TABLE `newsletter`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT for table `news_categories`
@@ -1447,13 +1477,13 @@ ALTER TABLE `partner`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `product_categories`
 --
 ALTER TABLE `product_categories`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `province`
@@ -1478,6 +1508,12 @@ ALTER TABLE `setting`
 --
 ALTER TABLE `slider`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `slogan`
+--
+ALTER TABLE `slogan`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `thuonghieu`

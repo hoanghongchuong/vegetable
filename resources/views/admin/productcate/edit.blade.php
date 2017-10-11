@@ -69,6 +69,27 @@
 								      	@endif
 									</div>
 								</div>
+								<div class="col-md-6 col-xs-12">
+									
+									<div class="form-group @if ($errors->first('fImagesBg')!='') has-error @endif">
+										<div class="form-group">
+											<div class="img_backgound">
+												<img src="{{ asset('upload/product/'.$data->background) }}" onerror="this.src='{{asset('public/admin_assets/images/no-image.jpg')}}'" width="200"  alt="NO PHOTO" />
+												<input type="hidden" name="img_current2" value="{!! @$data->background !!}">
+												@if(!empty($data->background))
+												<!-- <a href="{!! asset('admin/productcate/edit?id='.$id.'&type='.@$_GET['type'].'&delete_bg='.@$data->background) !!}" class="img_bg"><img src="{!! asset('public/admin_assets/images/del.png') !!}" alt="Xóa hình"></a> -->
+												@endif
+											</div>
+										</div>
+										<label for="file">Chọn background</label>
+								     	<input type="file" id="file" name="fImagesBg" >
+								    	<p class="help-block">Width:225px - Height: 162px</p>
+								    	@if ($errors->first('fImagesBg')!='')
+								      	<label class="control-label" for="inputError"><i class="fa fa-times-circle-o"></i> {!! $errors->first('fImagesBg'); !!}</label>
+								      	@endif
+									</div>
+									
+								</div>
 							</div>
 							<div class="clearfix"></div>
 	                  	</div><!-- /.tab-pane -->

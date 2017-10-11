@@ -31,11 +31,19 @@ class ProductCateController extends Controller {
             $img_name=time().'_'.$img->getClientOriginalName();
             $img->move($path_img,$img_name);
         }
+        $img2 = $request->file('fImagesBg');
+        $path_img2='upload/product';
+        $img_name2='';
+        if(!empty($img2)){
+            $img_name2=$img2->getClientOriginalName();
+            $img2->move($path_img2,$img_name2);
+        }
     	$cate = new ProductCate;
         $cate->parent_id = $request->txtProductCate;
         $cate->name = $request->txtName;
         $cate->alias = changeTitle($request->txtName);
         $cate->photo = $img_name;
+         $cate->background = $img_name2;
         $cate->title = $request->txtTitle;
         $cate->keyword = $request->txtKeyword;
         $cate->description = $request->txtDescription;
@@ -90,6 +98,18 @@ class ProductCateController extends Controller {
                 $img_name=time().'_'.$img->getClientOriginalName();
                 $img->move($path_img,$img_name);
                 $product_cate->photo = $img_name;
+            }
+
+            $img2 = $request->file('fImagesBg');
+            $img_current2 = 'upload/product/'.$request->img_current2;
+            if(!empty($img2)){
+                $path_img2='upload/product';
+                $img_name2=time().'_'.$img2->getClientOriginalName();
+                $img2->move($path_img2,$img_name2);
+                $product_cate->background = $img_name2;
+                if (File::exists($img_current2)) {
+                    File::delete($img_current2);
+                }
             }
             
             if($request->txtProductCate!= $id && $request->txtProductCate>0){

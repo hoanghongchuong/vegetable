@@ -66,6 +66,20 @@
 								      	@endif
 									</div>
 								</div>
+								<div class="col-md-6 col-xs-12">
+									<div class="col-md-6 col-xs-12">
+										
+										<div class="form-group col-md-12 @if ($errors->first('fImagesBg')!='') has-error @endif">
+											<label for="file">File background</label>
+									     	<input type="file" id="file" name="fImagesBg" >
+									    	<p class="help-block">Width:225px - Height: 162px</p>
+									    	@if ($errors->first('fImagesBg')!='')
+									      	<label class="control-label" for="inputError"><i class="fa fa-times-circle-o"></i> {!! $errors->first('fImagesBg'); !!}</label>
+									      	@endif
+										</div>
+										
+									</div>
+								</div>
 							</div>
 							<div class="clearfix"></div>
 	                  	</div><!-- /.tab-pane -->
