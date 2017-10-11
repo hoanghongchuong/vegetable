@@ -487,7 +487,6 @@ class IndexController extends Controller {
 	{
 		// $data = $req->only('product_id');
 		$product = DB::table('products')->select()->where('status',1)->where('id',$req->id)->first();
-		dd($product);
 		if (!$product) {
 			die('product not found');
 		}
