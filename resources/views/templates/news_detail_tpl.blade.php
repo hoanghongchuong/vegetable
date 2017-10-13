@@ -5,7 +5,7 @@
         <nav class="breadcrumb">
             <a class="breadcrumb-item" href="{{url('')}}">Trang chủ</a>
             <a class="breadcrumb-item" href="{{url('tin-tuc')}}">Tin tức</a>
-            <span class="breadcrumb-item active">Chi tiết tin tức</span>
+            <span class="breadcrumb-item active">{{$news_detail->name}}</span>
         </nav>
     </div>
 </section>

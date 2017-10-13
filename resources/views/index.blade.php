@@ -51,7 +51,23 @@
         </main>
        
         @include('templates.layout.footer')
-   
+   <nav id="cd-lateral-nav" class="visible-mobile">
+            <div class="search visible-mobile search-mobile">
+                <form class="form-search" action="">
+                    <input type="text" name="content-search" class="form-input has-action" placeholder="Tìm kiếm">
+                    <button type="submit" class="button button--icon button--inputAction">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <ul class="cd-navigation nav-dropdown">
+                <li><a href="{{url('')}}" title="">Trang chủ</a> </li>
+                <li><a href="{{url('gioi-thieu')}}" title="">Giới thiệu</a> </li>
+                <li><a href="{{url('san-pham')}}" title="">Sản phẩm</a> </li>
+                <li><a href="{{url('tin-tuc')}}" title="">Tin tức</a> </li>
+                <li><a href="{{url('lien-he')}}" title="">Liên hệ</a> </li>
+            </ul>
+        </nav>
     
     <!-- BEGIN: SCRIPT -->
    <script src="{{ asset('public/js/bootstrap.min.js') }}"></script>

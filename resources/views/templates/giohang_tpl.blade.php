@@ -34,7 +34,7 @@
                                 <img src="{{asset('upload/product/'.$product->options->photo)}}" alt="" title="">
                                 <div class="cart-text">
                                     <h4>{{$product->name}}</h4>
-                                    <p class="price">{{number_format($product->price)}}/1kg</p>
+                                    <p class="price">{{number_format($product->price)}}/{{$product->options->donvitinh}}</p>
                                 </div>
                                 <!-- <button type="button" class="close-sp" >
                                     <span aria-hidden="true">×</span>

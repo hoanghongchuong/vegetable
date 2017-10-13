@@ -496,7 +496,7 @@ class IndexController extends Controller {
 					'name'=>$product->name,
 					'qty'=>1,
 					'price'=>$product->price,
-					'options'=>array('photo'=>$product->photo,'code'=>$product->code)));
+					'options'=>array('photo'=>$product->photo,'code'=>$product->code, 'donvitinh'=>$product->donvitinh)));
 			return 1;
 		} catch (\Exception $e) {
 			return 0;

@@ -78,6 +78,10 @@
 										<label for="">Xuất xứ</label>
 										<input type="text" name="xuatxu" class="form-control" value="">
 									</div>
+									<div class="form-group">
+										<label for="">Đơn vị tính</label>
+										<input type="text" name="donvitinh" class="form-control" value="">
+									</div>
 									<!-- <div class="form-group">
 								      	<label for="ten">Thương hiệu</label>
 								      	<select name="txtThuonghieu" class="form-control">

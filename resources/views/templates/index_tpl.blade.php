@@ -69,6 +69,7 @@ $cateProducts = Cache::get('cateProducts');
                 @foreach($cate_pro as $k=>$cates)
                 <div role="tabpanel" class="tab-pane fade in show @if($k ==0) active @endif" id="tab{{$k}}">
                     <div class="row">
+					<h3 style="text-align: center; width:100%; margin-top:30px;margin-bottom:30px">{{$cates->name}}</h3>
                         <?php $products = DB::table('products')->where('cate_id',$cates->id)->orderBy('id','desc')->take(8)->get() ?>
                         @foreach($products as $product)
                         <div class="col-md-3">
@@ -161,9 +162,12 @@ $cateProducts = Cache::get('cateProducts');
                         </ul>
                         <!-- Tab panes -->
                         <div class="tab-content">
+							
                             @foreach($cate_pro as $key=>$cate)
+							
                             <?php $productCates = DB::table('products')->where('noibat',1)->where('cate_id',$cate->id)->get();?>
                             <div role="tabpanel" class="tab-pane fade in show @if ($key == 0) active @endif" id="tab{{$key}}-s">
+							<h3 style="text-align: center; width:100%; margin-top:30px;margin-bottom:30px">{{$cate->name}}</h3>
                                 <div class="owl-carousel sale-slider">
                                     @foreach($productCates as $productKM)   
                                     <div class="product">
@@ -268,21 +272,5 @@ $cateProducts = Cache::get('cateProducts');
     </section>
 </main>
 
-<nav id="cd-lateral-nav" class="visible-mobile">
-    <div class="search visible-mobile search-mobile">
-        <form class="form-search" action="">
-            <input type="text" name="content-search" class="form-input has-action" placeholder="Tìm kiếm">
-            <button type="submit" class="button button--icon button--inputAction">
-                <i class="fa fa-search"></i>
-            </button>
-        </form>
-    </div>
-    <ul class="cd-navigation nav-dropdown">
-        <li><a href="index.html" title="">Trang chủ</a> </li>
-        <li><a href="gioi-thieu.html" title="">Giới thiệu</a> </li>
-        <li><a href="san-pham.html" title="">Sản phẩm</a> </li>
-        <li><a href="tin-tuc.html" title="">Tin tức</a> </li>
-        <li><a href="lien-he.html" title="">Liên hệ</a> </li>
-    </ul>
-</nav>
+
 @endsection

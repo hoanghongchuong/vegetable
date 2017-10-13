@@ -24,7 +24,7 @@
                             <span class="bold">Xuất xứ:</span>
                             <span>{{$product_detail->xuatxu}}</span>
                         </p>
-                        <h2 class="price">Giá : {{number_format($product_detail->price)}}</h2>
+                        <h2 class="price">Giá : {{number_format($product_detail->price)}} / {{$product_detail->donvitinh}}</h2>
                         <div class="content-detail-product">
                             {!! $product_detail->content !!}
                         </div>

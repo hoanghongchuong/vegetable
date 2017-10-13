@@ -28,6 +28,7 @@
             @foreach($cate_pro as $k=>$cates)
                 <div role="tabpanel" class="tab-pane fade in show @if($k ==0) active @endif" id="tab{{$k}}">
                     <div class="row">
+						<h3 style="text-align: center; width:100%; margin-top:30px;margin-bottom:30px">{{$cates->name}}</h3>
                         <?php $products = DB::table('products')->where('cate_id',$cates->id)->orderBy('id','desc')->get() ?>
                         @foreach($products as $product)
                         <div class="col-md-3">
@@ -112,8 +113,8 @@
                         @foreach($cate_pro as $key=>$cate)
                         <li class="nav-item">
                             <a class="nav-link @if ($key == 0) active @endif" href="#tab{{$key}}-s" role="tab" data-toggle="tab">
-                                <img src="{{asset('upload/product/'.$cate->photo)}}" alt="" title="" class="">
-                                <img src="images/tab1-x.png" alt="" title="" class="img-active">
+                                <img src="{{asset('upload/product/'.$cate->photo)}}" alt="" title="" class="img-noactive">
+                                <img src="{{asset('upload/product/'.$cate->background)}}" alt="" title="" class="img-active">
                             </a>
                         </li>
                         @endforeach
@@ -127,10 +128,10 @@
                          ?>
         
                         <div role="tabpanel" class="tab-pane fade in show @if ($key == 0) active @endif" id="tab{{$key}}-s">
-                            
+                            <h3 style="text-align: center; width:100%; margin-top:30px;margin-bottom:30px">{{$cate->name}}</h3>
                             <div class="owl-carousel sale-slider">
-                                @foreach($productCates->chunk(2) as $productCate)   
-                                    @foreach($productCate as $productKM)   
+                                  
+                                    @foreach($productCates as $productKM)   
                                     <div class="product">
                                         <a href="{{url('san-pham/'.$productKM->alias.'.html')}}" title="" class="img-pro">
                                             <img src="{{asset('upload/product/'.$productKM->photo)}}" alt="" title="">
@@ -151,7 +152,7 @@
                                         </div> -->
                                     </div>
                                     @endforeach
-                                @endforeach
+                             
                             </div>
                             
                         </div>

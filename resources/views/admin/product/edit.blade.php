@@ -74,6 +74,10 @@
 										<label for="">Xuất xứ</label>
 										<input type="text" name="xuatxu" class="form-control" value="{{$data->xuatxu}}">
 									</div>
+									<div class="form-group">
+										<label for="">Đơn vị tính</label>
+										<input type="text" name="donvitinh" class="form-control" value="{{$data->donvitinh}}">
+									</div>
 									<!-- <div class="form-group">
 										<label for="">Thương hiệu</label>
 										<select name="txtThuonghieu" class="form-control" id="">
